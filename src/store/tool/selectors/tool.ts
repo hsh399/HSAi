@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { pluginPrompts } from '@/prompts/plugin';
 import { MetaData } from '@/types/meta';
@@ -19,7 +19,7 @@ const enabledSchema =
   (s: ToolStoreState): ChatCompletionTool[] => {
     const manifests = pluginSelectors
       .installedPluginManifestList(s)
-      .concat(s.builtinTools.map((b) => b.manifest as LobeChatPluginManifest))
+      .concat(s.builtinTools.map((b) => b.manifest as deepnovaPluginManifest))
       // 如果存在 enabledPlugins，那么只启用 enabledPlugins 中的插件
       .filter((m) => tools.includes(m?.identifier));
 
@@ -31,7 +31,7 @@ const enabledSystemRoles =
   (s: ToolStoreState) => {
     const toolsSystemRole = pluginSelectors
       .installedPluginManifestList(s)
-      .concat(s.builtinTools.map((b) => b.manifest as LobeChatPluginManifest))
+      .concat(s.builtinTools.map((b) => b.manifest as deepnovaPluginManifest))
       // 如果存在 enabledPlugins，那么只启用 enabledPlugins 中的插件
       .filter((m) => m && tools.includes(m.identifier))
       .map((manifest) => {
@@ -92,10 +92,10 @@ const getMetaById =
 
 const getManifestById =
   (id: string) =>
-  (s: ToolStoreState): LobeChatPluginManifest | undefined =>
+  (s: ToolStoreState): deepnovaPluginManifest | undefined =>
     pluginSelectors
       .installedPluginManifestList(s)
-      .concat(s.builtinTools.map((b) => b.manifest as LobeChatPluginManifest))
+      .concat(s.builtinTools.map((b) => b.manifest as deepnovaPluginManifest))
       .find((i) => i.identifier === id);
 
 // 获取插件 manifest 加载状态

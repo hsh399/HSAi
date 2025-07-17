@@ -2,7 +2,7 @@ import {
   LocalFileItem,
   LocalMoveFilesResultItem,
   LocalReadFileResult,
-} from '@lobechat/electron-client-ipc';
+} from '@deepnova/electron-client-ipc';
 
 export interface FileResult {
   contentType?: string;

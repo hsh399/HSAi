@@ -1,6 +1,6 @@
 import { and, eq, inArray, lt } from 'drizzle-orm/expressions';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import {
   AsyncTaskError,
   AsyncTaskErrorType,
@@ -15,9 +15,9 @@ export const ASYNC_TASK_TIMEOUT = 298 * 1000;
 
 export class AsyncTaskModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

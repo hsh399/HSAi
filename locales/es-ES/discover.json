@@ -101,7 +101,7 @@
       "desc1": "En la ventana de conversación, accede a la página de configuración del asistente que deseas enviar a través de la esquina superior derecha;",
       "desc2": "Haz clic en el botón de enviar al mercado de asistentes en la esquina superior derecha.",
       "tag": "Método uno",
-      "title": "Enviar a través de LobeChat"
+      "title": "Enviar a través de deepnova"
     },
     "func2": {
       "button": "Ir al repositorio de asistentes de Github",
@@ -254,7 +254,7 @@
             "claude": "- Abre la aplicación **Claude Desktop**\n- Ve a **Configuración** y luego selecciona **Desarrollador**\n- Haz clic en **Editar configuración**\n- Abre el archivo **claude_desktop_config.json**\n- Copia y pega la configuración del servidor en el archivo existente y guarda",
             "cline": "- Abre VS Code con la extensión Cline instalada\n- Haz clic en el icono de Cline en la barra lateral\n- Selecciona **MCP Servers** en el menú desplegable\n- En la pestaña **Remote Servers**, introduce el nombre del servidor y la URL de tu servidor MCP\n- Haz clic en **Add Server** para conectar",
             "cursor": "- Navega a **Configuración** y selecciona la configuración de Cursor\n- En el panel izquierdo, elige **MCP**\n- Haz clic en **Agregar nuevo servidor MCP global** en la esquina superior derecha\n- Copia y pega la configuración del servidor en el archivo existente y guarda",
-            "lobeChat": "- Abre la aplicación de escritorio **LobeChat**\n- Ve a **Configuración** - **Asistente predeterminado**\n- Luego selecciona **Configuración de complementos** - **Complementos personalizados**\n- Haz clic en **Importar configuración JSON rápidamente**\n- Copia y pega la configuración del servidor en el cuadro de texto y procede a instalar",
+            "deepnova": "- Abre la aplicación de escritorio **deepnova**\n- Ve a **Configuración** - **Asistente predeterminado**\n- Luego selecciona **Configuración de complementos** - **Complementos personalizados**\n- Haz clic en **Importar configuración JSON rápidamente**\n- Copia y pega la configuración del servidor en el cuadro de texto y procede a instalar",
             "openai": "- Abre tu aplicación o entorno de desarrollo de **OpenAI**\n- Configura la herramienta MCP en la **API de respuestas**\n- Añade el bloque MCP en el array **tools** de la solicitud API\n- Establece **server_url** al endpoint de tu servidor MCP\n- Incluye los encabezados necesarios para autenticación (clave API, token, etc.)\n- Usa el parámetro `allowed_tools` para limitar las herramientas expuestas\n- Configura `require_approval` para controlar la aprobación de ejecución de herramientas",
             "vscode": "- Abre VS Code\n- Abre la paleta de comandos (`Ctrl+Shift+P` / `Cmd+Shift+P`)\n- Escribe **MCP: Add Server** y selecciónalo\n- Elige agregar a la configuración del espacio de trabajo o del usuario\n- Copia y pega la configuración del servidor"
           },
@@ -545,7 +545,7 @@
       "type": "Tipo"
     },
     "providerInfo": {
-      "apiTooltip": "LobeChat admite el uso de claves API personalizadas para este proveedor.",
+      "apiTooltip": "deepnova admite el uso de claves API personalizadas para este proveedor.",
       "input": "Precio de entrada",
       "inputTooltip": "Costo por millón de Tokens",
       "latency": "Latencia",

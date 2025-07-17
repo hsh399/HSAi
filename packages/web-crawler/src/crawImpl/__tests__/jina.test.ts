@@ -36,7 +36,7 @@ describe('jina crawler', () => {
       headers: {
         'Accept': 'application/json',
         'Authorization': 'Bearer test-key',
-        'x-send-from': 'LobeChat Community',
+        'x-send-from': 'deepnova Community',
       },
     });
 
@@ -73,7 +73,7 @@ describe('jina crawler', () => {
       headers: {
         'Accept': 'application/json',
         'Authorization': 'Bearer env-reader-key',
-        'x-send-from': 'LobeChat Community',
+        'x-send-from': 'deepnova Community',
       },
     });
 
@@ -102,7 +102,7 @@ describe('jina crawler', () => {
       headers: {
         'Accept': 'application/json',
         'Authorization': 'Bearer env-key',
-        'x-send-from': 'LobeChat Community',
+        'x-send-from': 'deepnova Community',
       },
     });
 
@@ -129,7 +129,7 @@ describe('jina crawler', () => {
       headers: {
         'Accept': 'application/json',
         'Authorization': '',
-        'x-send-from': 'LobeChat Community',
+        'x-send-from': 'deepnova Community',
       },
     });
   });

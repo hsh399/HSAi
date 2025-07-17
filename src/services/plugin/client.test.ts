@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { eq } from 'drizzle-orm';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
@@ -32,7 +32,7 @@ describe('PluginService', () => {
       // Arrange
       const fakePlugin = {
         identifier: 'test-plugin-d',
-        manifest: { name: 'TestPlugin', version: '1.0.0' } as unknown as LobeChatPluginManifest,
+        manifest: { name: 'TestPlugin', version: '1.0.0' } as unknown as deepnovaPluginManifest,
         type: 'plugin',
       } as InstallPluginParams;
 
@@ -121,7 +121,7 @@ describe('PluginService', () => {
     it('should update a plugin manifest', async () => {
       // Arrange
       const identifier = 'plugin-id';
-      const manifest = { name: 'NewPluginManifest' } as unknown as LobeChatPluginManifest;
+      const manifest = { name: 'NewPluginManifest' } as unknown as deepnovaPluginManifest;
       await clientDB.insert(userInstalledPlugins).values([{ identifier, type: 'plugin', userId }]);
 
       // Act

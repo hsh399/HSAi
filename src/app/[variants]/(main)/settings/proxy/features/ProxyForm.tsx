@@ -1,6 +1,6 @@
 'use client';
 
-import { NetworkProxySettings } from '@lobechat/electron-client-ipc';
+import { NetworkProxySettings } from '@deepnova/electron-client-ipc';
 import { Alert, Block, Text } from '@lobehub/ui';
 import { App, Button, Divider, Form, Input, Radio, Skeleton, Space, Switch } from 'antd';
 import isEqual from 'fast-deep-equal';

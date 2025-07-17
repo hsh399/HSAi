@@ -21,7 +21,7 @@
     "scope": {
       "email": "訪問您的電子郵件地址",
       "offline_access": "允許客戶端訪問您的資料",
-      "openid": "使用您的 LobeChat 帳戶進行身份驗證",
+      "openid": "使用您的 deepnova 帳戶進行身份驗證",
       "profile": "訪問您的基本資料信息（名稱、頭像等）",
       "sync-read": "讀取您的同步資料",
       "sync-write": "寫入並更新您的同步資料"
@@ -30,7 +30,7 @@
   },
   "failed": {
     "backToHome": "返回首頁",
-    "subTitle": "您已拒絕授權應用訪問您的 LobeChat 帳戶",
+    "subTitle": "您已拒絕授權應用訪問您的 deepnova 帳戶",
     "title": "授權被拒絕"
   },
   "handoff": {
@@ -50,7 +50,7 @@
     "userWelcome": "歡迎回來，"
   },
   "success": {
-    "subTitle": "您已成功授權應用訪問您的 LobeChat 帳戶，可以關閉該頁面了",
+    "subTitle": "您已成功授權應用訪問您的 deepnova 帳戶，可以關閉該頁面了",
     "title": "授權成功"
   }
 }

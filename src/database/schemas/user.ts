@@ -1,5 +1,5 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix  */
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { boolean, jsonb, pgTable, primaryKey, text } from 'drizzle-orm/pg-core';
 
 import { DEFAULT_PREFERENCE } from '@/const/user';
@@ -58,7 +58,7 @@ export const userInstalledPlugins = pgTable(
 
     identifier: text('identifier').notNull(),
     type: text('type', { enum: ['plugin', 'customPlugin'] }).notNull(),
-    manifest: jsonb('manifest').$type<LobeChatPluginManifest>(),
+    manifest: jsonb('manifest').$type<deepnovaPluginManifest>(),
     settings: jsonb('settings'),
     customParams: jsonb('custom_params').$type<CustomPluginParams>(),
 

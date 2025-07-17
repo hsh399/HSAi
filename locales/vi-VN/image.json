@@ -72,7 +72,7 @@
     }
   },
   "notSupportGuide": {
-    "desc": "Phiên bản triển khai hiện tại là chế độ cơ sở dữ liệu phía khách, không hỗ trợ chức năng tạo hình ảnh AI. Vui lòng chuyển sang <1>chế độ triển khai cơ sở dữ liệu phía máy chủ</1> hoặc sử dụng trực tiếp <3>LobeChat Cloud</3>",
+    "desc": "Phiên bản triển khai hiện tại là chế độ cơ sở dữ liệu phía khách, không hỗ trợ chức năng tạo hình ảnh AI. Vui lòng chuyển sang <1>chế độ triển khai cơ sở dữ liệu phía máy chủ</1> hoặc sử dụng trực tiếp <3>deepnova Cloud</3>",
     "features": {
       "fileIntegration": {
         "desc": "Tích hợp sâu với hệ thống quản lý tệp, ảnh tạo ra tự động lưu vào hệ thống tệp, hỗ trợ quản lý và tổ chức thống nhất",

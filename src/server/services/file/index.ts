@@ -3,7 +3,7 @@ import { TRPCError } from '@trpc/server';
 import { serverDBEnv } from '@/config/db';
 import { FileModel } from '@/database/models/file';
 import { FileItem } from '@/database/schemas';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { TempFileManager } from '@/server/utils/tempFileManager';
 import { nanoid } from '@/utils/uuid';
 
@@ -19,7 +19,7 @@ export class FileService {
 
   private impl: FileServiceImpl = createFileServiceModule();
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.fileModel = new FileModel(db, userId);
   }

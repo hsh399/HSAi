@@ -2,7 +2,7 @@ import debug from 'debug';
 import { NextRequest } from 'next/server';
 
 import { JWTPayload, LOBE_CHAT_AUTH_HEADER } from '@/const/auth';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { KeyVaultsGateKeeper } from '@/server/modules/KeyVaultsEncrypt';
 
 const log = debug('lobe-async:context');
@@ -10,7 +10,7 @@ const log = debug('lobe-async:context');
 export interface AsyncAuthContext {
   jwtPayload: JWTPayload;
   secret: string;
-  serverDB?: LobeChatDatabase;
+  serverDB?: deepnovaDatabase;
   userId?: string | null;
 }
 
@@ -36,19 +36,19 @@ export const createAsyncRouteContext = async (request: NextRequest): Promise<Asy
   log('Creating async route context');
 
   const authorization = request.headers.get('Authorization');
-  const lobeChatAuthorization = request.headers.get(LOBE_CHAT_AUTH_HEADER);
+  const deepnovaAuthorization = request.headers.get(LOBE_CHAT_AUTH_HEADER);
 
   log('Authorization header present: %s', !!authorization);
-  log('LobeChat auth header present: %s', !!lobeChatAuthorization);
+  log('deepnova auth header present: %s', !!deepnovaAuthorization);
 
   if (!authorization) {
     log('No authorization header found');
     throw new Error('No authorization header found');
   }
 
-  if (!lobeChatAuthorization) {
-    log('No LobeChat authorization header found');
-    throw new Error('No LobeChat authorization header found');
+  if (!deepnovaAuthorization) {
+    log('No deepnova authorization header found');
+    throw new Error('No deepnova authorization header found');
   }
 
   const secret = authorization?.split(' ')[1];
@@ -58,8 +58,8 @@ export const createAsyncRouteContext = async (request: NextRequest): Promise<Asy
     log('Initializing KeyVaultsGateKeeper');
     const gateKeeper = await KeyVaultsGateKeeper.initWithEnvKey();
 
-    log('Decrypting LobeChat authorization');
-    const { plaintext } = await gateKeeper.decrypt(lobeChatAuthorization);
+    log('Decrypting deepnova authorization');
+    const { plaintext } = await gateKeeper.decrypt(deepnovaAuthorization);
 
     log('Parsing decrypted authorization data');
     const { userId, payload } = JSON.parse(plaintext);

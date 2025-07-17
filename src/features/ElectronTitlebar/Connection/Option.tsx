@@ -1,5 +1,5 @@
 import { CheckCircleFilled } from '@ant-design/icons';
-import { StorageModeEnum } from '@lobechat/electron-client-ipc';
+import { StorageModeEnum } from '@deepnova/electron-client-ipc';
 import { createStyles } from 'antd-style';
 import { ComponentType, ReactNode } from 'react';
 import { Center, Flexbox } from 'react-layout-kit';

@@ -218,7 +218,7 @@
       "edit": "Editar complemento personalizado"
     },
     "type": {
-      "lobe": "Complemento LobeChat",
+      "lobe": "Complemento deepnova",
       "openai": "Complemento OpenAI"
     },
     "update": "Actualizar",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "Instalados",
       "mcp": "Complemento MCP",
-      "old": "Plugin LobeChat"
+      "old": "Plugin deepnova"
     },
     "title": "Tienda de complementos"
   },

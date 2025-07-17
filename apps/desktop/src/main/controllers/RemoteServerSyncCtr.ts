@@ -1,7 +1,7 @@
 import {
   ProxyTRPCRequestParams,
   ProxyTRPCRequestResult,
-} from '@lobechat/electron-client-ipc/src/types/proxyTRPCRequest';
+} from '@deepnova/electron-client-ipc/src/types/proxyTRPCRequest';
 import { Buffer } from 'node:buffer';
 import http, { IncomingMessage, OutgoingHttpHeaders } from 'node:http';
 import https from 'node:https';

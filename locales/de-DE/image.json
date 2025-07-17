@@ -72,7 +72,7 @@
     }
   },
   "notSupportGuide": {
-    "desc": "Die aktuell eingesetzte Instanz verwendet den Client-Datenbankmodus und unterstützt die KI-Bilderzeugung nicht. Bitte wechseln Sie zum <1>Server-Datenbankmodus</1> oder nutzen Sie direkt <3>LobeChat Cloud</3>.",
+    "desc": "Die aktuell eingesetzte Instanz verwendet den Client-Datenbankmodus und unterstützt die KI-Bilderzeugung nicht. Bitte wechseln Sie zum <1>Server-Datenbankmodus</1> oder nutzen Sie direkt <3>deepnova Cloud</3>.",
     "features": {
       "fileIntegration": {
         "desc": "Tiefgreifende Integration mit dem Dateimanagementsystem, generierte Bilder werden automatisch im Dateisystem gespeichert und können zentral verwaltet und organisiert werden.",

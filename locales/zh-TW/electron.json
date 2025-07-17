@@ -41,7 +41,7 @@
   "remoteServer": {
     "authError": "授權失敗: {{error}}",
     "authPending": "請在瀏覽器中完成授權",
-    "configDesc": "連接到遠端LobeChat伺服器，啟用資料同步",
+    "configDesc": "連接到遠端deepnova伺服器，啟用資料同步",
     "configError": "配置出錯",
     "configTitle": "配置雲端同步",
     "connect": "連接並授權",

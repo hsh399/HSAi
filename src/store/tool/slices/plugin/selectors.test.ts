@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest, LobeChatPluginMeta } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest, deepnovaPluginMeta } from '@lobehub/chat-plugin-sdk';
 import { describe, expect, it } from 'vitest';
 
 import { DiscoverPluginItem } from '@/types/discover';
@@ -21,7 +21,7 @@ const mockState = {
         identifier: 'plugin-1',
         api: [{ name: 'api-1' }],
         type: 'default',
-      } as LobeChatPluginManifest,
+      } as deepnovaPluginManifest,
       settings: { setting1: 'value1' },
     },
     {

@@ -1,4 +1,4 @@
-import { StorageMode, StorageModeEnum } from '@lobechat/electron-client-ipc';
+import { StorageMode, StorageModeEnum } from '@deepnova/electron-client-ipc';
 import { Button, Input } from '@lobehub/ui';
 import { LobeHub } from '@lobehub/ui/brand';
 import { createStyles } from 'antd-style';
@@ -178,7 +178,7 @@ const ConnectionMode = memo<ConnectionModeProps>(({ setIsOpen, setWaiting }) => 
                       setUrlError(validateUrl(newUrl));
                     }}
                     onClick={(e) => e.stopPropagation()}
-                    placeholder="https://your-lobechat.com"
+                    placeholder="https://your-deepnova.com"
                     status={urlError ? 'error' : undefined}
                     value={selfHostedUrl}
                   />

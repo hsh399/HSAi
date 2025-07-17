@@ -5,15 +5,15 @@ alwaysApply: false
 ---
 ---
 type: agent-requested
-title: 测试指南 - LobeChat Testing Guide
-description: LobeChat 项目的 Vitest 测试环境配置、运行方式、修复原则指南
+title: 测试指南 - deepnova Testing Guide
+description: deepnova 项目的 Vitest 测试环境配置、运行方式、修复原则指南
 ---
 
-# 测试指南 - LobeChat Testing Guide
+# 测试指南 - deepnova Testing Guide
 
 ## 🧪 测试环境概览
 
-LobeChat 项目使用 Vitest 测试库，配置了两种不同的测试环境：
+deepnova 项目使用 Vitest 测试库，配置了两种不同的测试环境：
 
 ### 客户端测试环境 (DOM Environment)
 

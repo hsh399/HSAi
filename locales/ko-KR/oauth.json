@@ -21,7 +21,7 @@
     "scope": {
       "email": "귀하의 이메일 주소에 접근",
       "offline_access": "클라이언트가 귀하의 데이터에 접근할 수 있도록 허용",
-      "openid": "귀하의 LobeChat 계정으로 인증",
+      "openid": "귀하의 deepnova 계정으로 인증",
       "profile": "귀하의 기본 프로필 정보(이름, 프로필 사진 등)에 접근",
       "sync-read": "귀하의 동기화 데이터를 읽습니다",
       "sync-write": "귀하의 동기화 데이터를 작성하고 업데이트합니다"
@@ -30,7 +30,7 @@
   },
   "failed": {
     "backToHome": "홈으로 돌아가기",
-    "subTitle": "귀하가 애플리케이션의 LobeChat 계정 접근을 거부했습니다",
+    "subTitle": "귀하가 애플리케이션의 deepnova 계정 접근을 거부했습니다",
     "title": "허가가 거부되었습니다"
   },
   "handoff": {
@@ -50,7 +50,7 @@
     "userWelcome": "다시 오신 것을 환영합니다, "
   },
   "success": {
-    "subTitle": "귀하가 애플리케이션의 LobeChat 계정 접근을 성공적으로 허가했습니다. 이 페이지를 닫아도 됩니다",
+    "subTitle": "귀하가 애플리케이션의 deepnova 계정 접근을 성공적으로 허가했습니다. 이 페이지를 닫아도 됩니다",
     "title": "허가 성공"
   }
 }

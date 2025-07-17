@@ -218,7 +218,7 @@
       "edit": "Benutzerdefiniertes Plugin bearbeiten"
     },
     "type": {
-      "lobe": "LobeChat-Plugin",
+      "lobe": "deepnova-Plugin",
       "openai": "OpenAI-Plugin"
     },
     "update": "Aktualisieren",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "Installiert",
       "mcp": "MCP-Plugin",
-      "old": "LobeChat-Plugin"
+      "old": "deepnova-Plugin"
     },
     "title": "Plugin-Shop"
   },

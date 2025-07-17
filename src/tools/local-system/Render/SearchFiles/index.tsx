@@ -1,4 +1,4 @@
-import { LocalSearchFilesParams } from '@lobechat/electron-client-ipc';
+import { LocalSearchFilesParams } from '@deepnova/electron-client-ipc';
 import { memo } from 'react';
 
 import { LocalFileSearchState } from '@/tools/local-system/type';

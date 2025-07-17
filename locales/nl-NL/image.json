@@ -72,7 +72,7 @@
     }
   },
   "notSupportGuide": {
-    "desc": "De huidige implementatie gebruikt een client-database modus en ondersteunt geen AI-beeldgeneratie. Schakel over naar de <1>server-database modus</1> of gebruik direct <3>LobeChat Cloud</3>",
+    "desc": "De huidige implementatie gebruikt een client-database modus en ondersteunt geen AI-beeldgeneratie. Schakel over naar de <1>server-database modus</1> of gebruik direct <3>deepnova Cloud</3>",
     "features": {
       "fileIntegration": {
         "desc": "Diepe integratie met het bestandsbeheersysteem, gegenereerde afbeeldingen worden automatisch opgeslagen in het bestandssysteem voor gecentraliseerd beheer en organisatie",

@@ -1,7 +1,7 @@
 import debug from 'debug';
 import { and, eq } from 'drizzle-orm';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { FileService } from '@/server/services/file';
 import { Generation, GenerationAsset, GenerationBatch, GenerationConfig } from '@/types/generation';
 
@@ -16,12 +16,12 @@ import { GenerationModel } from './generation';
 const log = debug('lobe-image:generation-batch-model');
 
 export class GenerationBatchModel {
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
   private userId: string;
   private fileService: FileService;
   private generationModel: GenerationModel;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.db = db;
     this.userId = userId;
     this.fileService = new FileService(db, userId);

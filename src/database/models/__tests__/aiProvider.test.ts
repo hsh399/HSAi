@@ -2,7 +2,7 @@
 import { eq } from 'drizzle-orm/expressions';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { ModelProvider } from '@/libs/model-runtime';
 import { sleep } from '@/utils/sleep';
 
@@ -10,7 +10,7 @@ import { aiProviders, users } from '../../schemas';
 import { AiProviderModel } from '../aiProvider';
 import { getTestDB } from './_util';
 
-const serverDB: LobeChatDatabase = await getTestDB();
+const serverDB: deepnovaDatabase = await getTestDB();
 
 const userId = 'session-group-model-test-user-id';
 const aiProviderModel = new AiProviderModel(serverDB, userId);

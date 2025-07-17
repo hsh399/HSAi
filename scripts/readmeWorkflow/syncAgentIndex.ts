@@ -22,7 +22,7 @@ const genAgentTable = (data: DataItem[], lang?: string) => {
       [
         genLink(
           item.meta.title.replaceAll('|', ','),
-          urlJoin('https://lobechat.com/discover/assistant', item.identifier),
+          urlJoin('https://deepnova.com/discover/assistant', item.identifier),
         ),
         `<sup>By **${genLink(item.author, item.homepage)}** on **${(item as any).createdAt}**</sup>`,
       ].join('<br/>'),
@@ -41,7 +41,7 @@ const runAgentTable = async (lang?: string) => {
     md,
     [
       mdTable,
-      `> 📊 Total agents: ${genLink(`<kbd>**${data.length}**</kbd> `, 'https://lobechat.com/discover/assistants')}`,
+      `> 📊 Total agents: ${genLink(`<kbd>**${data.length}**</kbd> `, 'https://deepnova.com/discover/assistants')}`,
     ].join('\n\n'),
   );
   writeReadme(newMd, lang);

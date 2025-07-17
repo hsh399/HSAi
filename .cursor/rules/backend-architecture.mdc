@@ -4,9 +4,9 @@ globs: src/services/**/*,src/database/**/*,src/server/**/*
 alwaysApply: false
 ---
 
-# LobeChat 后端技术架构指南
+# deepnova 后端技术架构指南
 
-本指南旨在阐述 LobeChat 项目的后端分层架构，重点介绍各核心目录的职责以及它们之间的协作方式。
+本指南旨在阐述 deepnova 项目的后端分层架构，重点介绍各核心目录的职责以及它们之间的协作方式。
 
 ## 目录结构映射
 
@@ -25,7 +25,7 @@ src/
 
 ## 核心架构分层
 
-LobeChat 的后端设计注重模块化、可测试性和灵活性，以适应不同的运行环境（如浏览器端 PGLite、服务端远程 PostgreSQL 以及 Electron 桌面应用）。
+deepnova 的后端设计注重模块化、可测试性和灵活性，以适应不同的运行环境（如浏览器端 PGLite、服务端远程 PostgreSQL 以及 Electron 桌面应用）。
 
 其主要分层如下：
 

@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { Block, Icon, Text } from '@lobehub/ui';
 import { Form as AForm, Button, FormInstance } from 'antd';
 import { useTheme } from 'antd-style';
@@ -18,7 +18,7 @@ import PluginEmptyState from './EmptyState';
 const PluginPreview = memo<{ form: FormInstance }>(({ form }) => {
   const { t } = useTranslation('plugin');
   const theme = useTheme();
-  const manifest: LobeChatPluginManifest = AForm.useWatch(['manifest'], form);
+  const manifest: deepnovaPluginManifest = AForm.useWatch(['manifest'], form);
   const meta = manifest?.meta;
 
   if (!manifest)

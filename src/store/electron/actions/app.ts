@@ -1,4 +1,4 @@
-import { ElectronAppState } from '@lobechat/electron-client-ipc';
+import { ElectronAppState } from '@deepnova/electron-client-ipc';
 import { SWRResponse } from 'swr';
 import { StateCreator } from 'zustand/vanilla';
 

@@ -1,4 +1,4 @@
-import { CrawlImplType, Crawler } from '@lobechat/web-crawler';
+import { CrawlImplType, Crawler } from '@deepnova/web-crawler';
 import pMap from 'p-map';
 
 import { toolsEnv } from '@/config/tools';

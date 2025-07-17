@@ -218,7 +218,7 @@
       "edit": "Edit Custom Plugin"
     },
     "type": {
-      "lobe": "LobeChat Plugin",
+      "lobe": "deepnova Plugin",
       "openai": "OpenAI Plugin"
     },
     "update": "Update",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "Installed",
       "mcp": "MCP Plugins",
-      "old": "LobeChat Plugins"
+      "old": "deepnova Plugins"
     },
     "title": "Plugin Store"
   },

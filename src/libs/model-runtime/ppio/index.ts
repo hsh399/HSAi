@@ -8,7 +8,7 @@ export const LobePPIOAI = createOpenAICompatibleRuntime({
   baseURL: 'https://api.ppinfra.com/v3/openai',
   constructorOptions: {
     defaultHeaders: {
-      'X-API-Source': 'lobechat',
+      'X-API-Source': 'deepnova',
     },
   },
   debug: {

@@ -1,6 +1,6 @@
 'use client';
 
-import { useWatchBroadcast } from '@lobechat/electron-client-ipc';
+import { useWatchBroadcast } from '@deepnova/electron-client-ipc';
 import { Button, Icon, Text } from '@lobehub/ui';
 import { createStyles, cx, keyframes } from 'antd-style';
 import { WifiIcon } from 'lucide-react';

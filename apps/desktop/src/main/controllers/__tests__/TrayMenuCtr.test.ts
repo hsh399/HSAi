@@ -3,7 +3,7 @@ import {
   ShowTrayNotificationParams,
   UpdateTrayIconParams,
   UpdateTrayTooltipParams
-} from '@lobechat/electron-client-ipc';
+} from '@deepnova/electron-client-ipc';
 
 import type { App } from '@/core/App';
 

@@ -52,7 +52,7 @@ export const VARIABLE_GENERATORS = {
   * |-------|---------|
   * | `{{email}}` | demo@lobehub.com |
   * | `{{nickname}}` | 社区版用户 |
-  * | `{{username}}` | LobeChat |
+  * | `{{username}}` | deepnova |
   *
   */
   email: () => userProfileSelectors.email(useUserStore.getState()) ?? '',

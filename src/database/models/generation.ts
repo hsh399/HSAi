@@ -1,7 +1,7 @@
 import debug from 'debug';
 import { and, eq } from 'drizzle-orm';
 
-import { LobeChatDatabase, Transaction } from '@/database/type';
+import { deepnovaDatabase, Transaction } from '@/database/type';
 import { FileService } from '@/server/services/file';
 import { AsyncTaskError, AsyncTaskStatus } from '@/types/asyncTask';
 import { FileSource } from '@/types/files';
@@ -20,12 +20,12 @@ import { FileModel } from './file';
 const log = debug('lobe-image:generation-model');
 
 export class GenerationModel {
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
   private userId: string;
   private fileModel: FileModel;
   private fileService: FileService;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.db = db;
     this.userId = userId;
     this.fileModel = new FileModel(db, userId);

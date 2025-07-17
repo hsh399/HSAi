@@ -79,7 +79,7 @@ describe('ServerService', () => {
           },
         },
         openingQuestions: ['Question 1', 'Question 2'],
-        openingMessage: 'Hello, I am [LobeChat](https://github.com/lobehub/lobe-chat).',
+        openingMessage: 'Hello, I am [deepnova](https://github.com/lobehub/lobe-chat).',
       },
       group: 'testGroup',
       meta: { description: 'test' },

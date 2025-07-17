@@ -32,13 +32,13 @@
   "applications": [
     {
       "owner": "admin",
-      "name": "lobechat",
+      "name": "deepnova",
       "createdTime": "2024-09-09T09:26:06Z",
-      "displayName": "LobeChat",
+      "displayName": "deepnova",
       "logo": "https://lobehub.com/icon-192x192.png",
       "homepageUrl": "https://lobehub.com",
-      "description": "LobeChat",
-      "organization": "lobechat",
+      "description": "deepnova",
+      "organization": "deepnova",
       "cert": "cert-built-in",
       "headerHtml": "",
       "enablePassword": true,
@@ -617,9 +617,9 @@
     },
     {
       "owner": "admin",
-      "name": "lobechat",
+      "name": "deepnova",
       "createdTime": "2024-09-09T09:26:04Z",
-      "displayName": "LobeChat Organization",
+      "displayName": "deepnova Organization",
       "websiteUrl": "https://lobehub.com",
       "logo": "https://lobehub.com/icon-192x192.png",
       "logoDark": "",
@@ -1082,7 +1082,7 @@
       "needUpdatePassword": false
     },
     {
-      "owner": "lobechat",
+      "owner": "deepnova",
       "name": "user",
       "createdTime": "2024-09-09T09:26:05Z",
       "updatedTime": "",
@@ -1127,7 +1127,7 @@
       "isAdmin": false,
       "isForbidden": false,
       "isDeleted": false,
-      "signupApplication": "lobechat",
+      "signupApplication": "deepnova",
       "hash": "",
       "preHash": "",
       "accessKey": "",

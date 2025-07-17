@@ -21,7 +21,7 @@
     "scope": {
       "email": "Accéder à votre adresse e-mail",
       "offline_access": "Autoriser le client à accéder à vos données",
-      "openid": "S'authentifier avec votre compte LobeChat",
+      "openid": "S'authentifier avec votre compte deepnova",
       "profile": "Accéder à vos informations de profil (nom, photo, etc.)",
       "sync-read": "Lire vos données synchronisées",
       "sync-write": "Écrire et mettre à jour vos données synchronisées"
@@ -30,7 +30,7 @@
   },
   "failed": {
     "backToHome": "Retour à l'accueil",
-    "subTitle": "Vous avez refusé d'autoriser l'application à accéder à votre compte LobeChat",
+    "subTitle": "Vous avez refusé d'autoriser l'application à accéder à votre compte deepnova",
     "title": "Autorisation refusée"
   },
   "handoff": {
@@ -50,7 +50,7 @@
     "userWelcome": "Bienvenue de nouveau, "
   },
   "success": {
-    "subTitle": "Vous avez réussi à autoriser l'application à accéder à votre compte LobeChat, vous pouvez fermer cette page",
+    "subTitle": "Vous avez réussi à autoriser l'application à accéder à votre compte deepnova, vous pouvez fermer cette page",
     "title": "Autorisation réussie"
   }
 }

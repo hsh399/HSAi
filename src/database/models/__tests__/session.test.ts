@@ -2,7 +2,7 @@ import { and, eq, inArray } from 'drizzle-orm/expressions';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { idGenerator } from '@/database/utils/idGenerator';
 
 import {
@@ -19,7 +19,7 @@ import {
 import { SessionModel } from '../session';
 import { getTestDB } from './_util';
 
-const serverDB: LobeChatDatabase = await getTestDB();
+const serverDB: deepnovaDatabase = await getTestDB();
 
 const userId = 'session-user';
 const sessionModel = new SessionModel(serverDB, userId);

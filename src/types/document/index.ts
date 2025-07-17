@@ -1,5 +1,5 @@
 /**
- * 在 LobeChat 中的文档对象
+ * 在 deepnova 中的文档对象
  */
 export interface LobeDocument {
   /**

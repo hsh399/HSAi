@@ -5,7 +5,7 @@ import type { PartialDeep } from 'type-fest';
 import { DEFAULT_INBOX_AVATAR } from '@/const/meta';
 import { INBOX_SESSION_ID } from '@/const/session';
 import { DEFAULT_AGENT_CONFIG } from '@/const/settings';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import {
   genEndDateWhere,
   genRangeWhere,
@@ -31,9 +31,9 @@ import {
 
 export class SessionModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

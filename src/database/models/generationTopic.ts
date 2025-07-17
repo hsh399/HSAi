@@ -1,6 +1,6 @@
 import { and, desc, eq } from 'drizzle-orm/expressions';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { FileService } from '@/server/services/file';
 import { GenerationAsset, ImageGenerationTopic } from '@/types/generation';
 
@@ -8,10 +8,10 @@ import { GenerationTopicItem, generationTopics } from '../schemas/generation';
 
 export class GenerationTopicModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
   private fileService: FileService;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
     this.fileService = new FileService(db, userId);

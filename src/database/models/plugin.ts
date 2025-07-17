@@ -1,15 +1,15 @@
 import { and, desc, eq } from 'drizzle-orm/expressions';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { LobeTool } from '@/types/tool';
 
 import { InstalledPluginItem, NewInstalledPlugin, userInstalledPlugins } from '../schemas';
 
 export class PluginModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

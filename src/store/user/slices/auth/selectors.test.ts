@@ -44,7 +44,7 @@ describe('userProfileSelectors', () => {
         enableAuth: () => false,
       } as unknown as UserStore;
 
-      expect(userProfileSelectors.displayUserName(store)).toBe('LobeChat');
+      expect(userProfileSelectors.displayUserName(store)).toBe('deepnova');
     });
 
     it('should return user username when auth is disabled and is desktop', () => {
@@ -202,7 +202,7 @@ describe('userProfileSelectors', () => {
         enableAuth: () => false,
       } as unknown as UserStore;
 
-      expect(userProfileSelectors.username(store)).toBe('LobeChat');
+      expect(userProfileSelectors.username(store)).toBe('deepnova');
     });
 
     it('should return user username when auth is disabled and is desktop', () => {

@@ -1,6 +1,6 @@
 import { and, asc, desc, eq, inArray } from 'drizzle-orm/expressions';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import {
   AiModelSortMap,
   AiModelSourceEnum,
@@ -13,9 +13,9 @@ import { AiModelSelectItem, NewAiModelItem, aiModels } from '../schemas';
 
 export class AiModelModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

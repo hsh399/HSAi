@@ -1,4 +1,4 @@
-import { NetworkProxySettings } from '@lobechat/electron-client-ipc';
+import { NetworkProxySettings } from '@deepnova/electron-client-ipc';
 import { Agent, ProxyAgent, getGlobalDispatcher, setGlobalDispatcher } from 'undici';
 
 import { createLogger } from '@/utils/logger';

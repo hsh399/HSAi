@@ -3,7 +3,7 @@ import dayjs from 'dayjs';
 import { count, sql } from 'drizzle-orm';
 import { and, asc, desc, eq, gt, inArray, isNotNull, isNull, like } from 'drizzle-orm/expressions';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import {
   genEndDateWhere,
   genRangeWhere,
@@ -52,9 +52,9 @@ export interface QueryMessageParams {
 
 export class MessageModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

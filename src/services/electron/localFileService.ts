@@ -12,7 +12,7 @@ import {
   RenameLocalFileParams,
   WriteLocalFileParams,
   dispatch,
-} from '@lobechat/electron-client-ipc';
+} from '@deepnova/electron-client-ipc';
 
 class LocalFileService {
   async listLocalFiles(params: ListLocalFileParams): Promise<LocalFileItem[]> {

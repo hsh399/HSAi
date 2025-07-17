@@ -6705,10 +6705,10 @@
   },
   {
     "children": {
-      "features": ["Release LobeChat 1.0."],
+      "features": ["Release deepnova 1.0."],
       "improvements": [
         "Bump version.",
-        "Release LobeChat 1.0, closes #2897 (97bb377)",
+        "Release deepnova 1.0, closes #2897 (97bb377)",
         "Bump version, closes #2896 (6e2d03b)",
         "Update LICENSE to Apache 2.0",
         "update to 1.0.0"

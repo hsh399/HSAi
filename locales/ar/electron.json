@@ -41,7 +41,7 @@
   "remoteServer": {
     "authError": "فشل التفويض: {{error}}",
     "authPending": "يرجى إكمال التفويض في المتصفح",
-    "configDesc": "الاتصال بخادم LobeChat البعيد، تمكين مزامنة البيانات",
+    "configDesc": "الاتصال بخادم deepnova البعيد، تمكين مزامنة البيانات",
     "configError": "خطأ في التكوين",
     "configTitle": "تكوين المزامنة السحابية",
     "connect": "الاتصال والتفويض",

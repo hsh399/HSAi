@@ -1,13 +1,13 @@
-# @lobechat/electron-client-ipc
+# @deepnova/electron-client-ipc
 
-这个包是 LobeChat 在 Electron 环境中用于处理 IPC（进程间通信）的客户端工具包。
+这个包是 deepnova 在 Electron 环境中用于处理 IPC（进程间通信）的客户端工具包。
 
 ## 介绍
 
 在 Electron 应用中，IPC（进程间通信）是连接主进程（Main Process）、渲染进程（Renderer Process）以及 NextJS 进程的桥梁。为了更好地组织和管理这些通信，我们将 IPC 相关的代码分成了两个包：
 
-- `@lobechat/electron-client-ipc`：**客户端 IPC 包**
-- `@lobechat/electron-server-ipc`：**服务端 IPC 包**
+- `@deepnova/electron-client-ipc`：**客户端 IPC 包**
+- `@deepnova/electron-server-ipc`：**服务端 IPC 包**
 
 ## 主要区别
 

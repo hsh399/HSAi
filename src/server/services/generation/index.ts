@@ -4,7 +4,7 @@ import mime from 'mime';
 import { nanoid } from 'nanoid';
 import sharp from 'sharp';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { FileService } from '@/server/services/file';
 import { getYYYYmmddHHMMss } from '@/utils/time';
 
@@ -27,7 +27,7 @@ interface ImageForGeneration {
 export class GenerationService {
   private fileService: FileService;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.fileService = new FileService(db, userId);
   }
 

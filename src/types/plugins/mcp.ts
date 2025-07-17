@@ -159,7 +159,7 @@ export interface MCPInstallProgress {
   // 结构化的错误信息，当安装失败时显示
   errorInfo?: MCPErrorInfo;
   manifest?: any;
-  // LobeChatPluginManifest
+  // deepnovaPluginManifest
   needsConfig?: boolean;
   // 0-100
   progress: number;

@@ -3,7 +3,7 @@ import { eq } from 'drizzle-orm/expressions';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { getTestDB } from '@/database/models/__tests__/_util';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { MessageItem } from '@/types/message';
 import { uuid } from '@/utils/uuid';
 
@@ -26,7 +26,7 @@ import {
 import { MessageModel } from '../message';
 import { codeEmbedding } from './fixtures/embedding';
 
-const serverDB: LobeChatDatabase = await getTestDB();
+const serverDB: deepnovaDatabase = await getTestDB();
 
 const userId = 'message-db';
 const messageModel = new MessageModel(serverDB, userId);

@@ -38,7 +38,7 @@ const ControlsForm = memo(() => {
           <Trans i18nKey={'extendParams.disableContextCaching.desc'} ns={'chat'}>
             单条对话生成成本最高可降低 90%，响应速度提升 4 倍（
             <Link
-              href={'https://www.anthropic.com/news/prompt-caching?utm_source=lobechat'}
+              href={'https://www.anthropic.com/news/prompt-caching?utm_source=deepnova'}
               rel={'nofollow'}
             >
               了解更多
@@ -59,7 +59,7 @@ const ControlsForm = memo(() => {
             基于 Claude Thinking 机制限制（
             <Link
               href={
-                'https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking?utm_source=lobechat#why-thinking-blocks-must-be-preserved'
+                'https://docs.anthropic.com/en/docs/build-with-claude/extended-thinking?utm_source=deepnova#why-thinking-blocks-must-be-preserved'
               }
               rel={'nofollow'}
             >

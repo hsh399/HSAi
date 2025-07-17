@@ -1,4 +1,4 @@
-import { LocalFileItem, LocalMoveFilesResultItem } from '@lobechat/electron-client-ipc';
+import { LocalFileItem, LocalMoveFilesResultItem } from '@deepnova/electron-client-ipc';
 import { describe, expect, it, vi } from 'vitest';
 
 import { localFileService } from '@/services/electron/localFileService';

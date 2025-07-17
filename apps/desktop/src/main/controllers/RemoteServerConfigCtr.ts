@@ -1,4 +1,4 @@
-import { DataSyncConfig } from '@lobechat/electron-client-ipc';
+import { DataSyncConfig } from '@deepnova/electron-client-ipc';
 import { safeStorage } from 'electron';
 import querystring from 'node:querystring';
 import { URL } from 'node:url';
@@ -13,7 +13,7 @@ const logger = createLogger('controllers:RemoteServerConfigCtr');
 
 /**
  * Remote Server Configuration Controller
- * Used to manage custom remote LobeChat server configuration
+ * Used to manage custom remote deepnova server configuration
  */
 export default class RemoteServerConfigCtr extends ControllerModule {
   /**

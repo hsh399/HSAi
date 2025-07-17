@@ -72,7 +72,7 @@
     }
   },
   "notSupportGuide": {
-    "desc": "L'instance déployée actuelle utilise un mode base de données client, la fonction de génération d'images IA n'est pas disponible. Veuillez passer au <1>mode de déploiement base de données serveur</1> ou utiliser directement <3>LobeChat Cloud</3>",
+    "desc": "L'instance déployée actuelle utilise un mode base de données client, la fonction de génération d'images IA n'est pas disponible. Veuillez passer au <1>mode de déploiement base de données serveur</1> ou utiliser directement <3>deepnova Cloud</3>",
     "features": {
       "fileIntegration": {
         "desc": "Intégration approfondie avec le système de gestion de fichiers, les images générées sont automatiquement sauvegardées dans le système de fichiers pour une gestion et organisation unifiées",

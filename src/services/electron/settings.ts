@@ -1,4 +1,4 @@
-import { NetworkProxySettings, dispatch } from '@lobechat/electron-client-ipc';
+import { NetworkProxySettings, dispatch } from '@deepnova/electron-client-ipc';
 
 class DesktopSettingsService {
   /**

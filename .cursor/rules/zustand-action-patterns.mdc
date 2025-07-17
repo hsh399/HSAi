@@ -3,13 +3,13 @@ description:
 globs: src/store/**
 alwaysApply: false
 ---
-# LobeChat Zustand Action 组织模式
+# deepnova Zustand Action 组织模式
 
-本文档详细说明了 LobeChat 项目中 Zustand Action 的组织方式、命名规范和实现模式，特别关注乐观更新与后端服务的集成。
+本文档详细说明了 deepnova 项目中 Zustand Action 的组织方式、命名规范和实现模式，特别关注乐观更新与后端服务的集成。
 
 ## Action 类型分层
 
-LobeChat 的 Action 采用分层架构，明确区分不同职责：
+deepnova 的 Action 采用分层架构，明确区分不同职责：
 
 ### 1. Public Actions
 对外暴露的主要接口，供 UI 组件调用：
@@ -144,7 +144,7 @@ togglePortal: (open?: boolean) => {
 
 ## 乐观更新实现模式
 
-乐观更新是 LobeChat 中的核心模式，用于提供流畅的用户体验：
+乐观更新是 deepnova 中的核心模式，用于提供流畅的用户体验：
 
 ### 标准乐观更新流程
 
@@ -243,7 +243,7 @@ internal_removeGenerationTopic: async (id: string) => {
 
 ## 加载状态管理模式
 
-LobeChat 使用统一的加载状态管理模式：
+deepnova 使用统一的加载状态管理模式：
 
 ### 数组式加载状态
 
@@ -288,7 +288,7 @@ internal_toggleLoadingArrays: (key, loading, id, action) => {
 
 ## SWR 集成模式
 
-LobeChat 使用 SWR 进行数据获取和缓存管理：
+deepnova 使用 SWR 进行数据获取和缓存管理：
 
 ### Hook 式数据获取
 

@@ -101,7 +101,7 @@
       "desc1": "在會話窗口中通過右上角設置進入你想提交助手的設置頁面;",
       "desc2": "點擊右上角提交到助手市場按鈕。",
       "tag": "方法一",
-      "title": "通過 LobeChat 提交"
+      "title": "通過 deepnova 提交"
     },
     "func2": {
       "button": "前往 Github 助手倉庫",
@@ -254,7 +254,7 @@
             "claude": "- 打開 **Claude Desktop** 應用\n- 前往 **設定**，然後選擇 **開發者**\n- 點擊 **編輯配置**\n- 打開 **claude_desktop_config.json** 檔案\n- 複製並貼上伺服器配置到現有檔案中，然後儲存",
             "cline": "- 打開安裝了 Cline 擴充功能的 VS Code\n- 點擊側邊欄中的 Cline 圖示\n- 從下拉選單中選擇 **MCP Servers**\n- 在 **Remote Servers** 標籤頁中，輸入伺服器名稱和您的 MCP 伺服器 URL\n- 點擊 **Add Server** 進行連接",
             "cursor": "- 導航到 **設定**，然後選擇 Cursor 設定\n- 在左側選擇 **MCP**\n- 點擊右上角的 **新增全域 MCP 伺服器**\n- 複製並貼上伺服器配置到現有檔案中，然後儲存",
-            "lobeChat": "- 打開 **LobeChat 桌面版** 應用\n- 前往 **設定** - **預設助理**\n- 然後選擇 **外掛設定** - **自訂外掛**\n- 點擊 **快速匯入 JSON 配置**\n- 複製並貼上伺服器配置到文字框，然後安裝",
+            "deepnova": "- 打開 **deepnova 桌面版** 應用\n- 前往 **設定** - **預設助理**\n- 然後選擇 **外掛設定** - **自訂外掛**\n- 點擊 **快速匯入 JSON 配置**\n- 複製並貼上伺服器配置到文字框，然後安裝",
             "openai": "- 打開您的 **OpenAI 應用** 或開發環境\n- 在 **Responses API** 中配置 MCP 工具\n- 在 API 請求的 **tools** 陣列中新增 MCP 區塊\n- 設定 **server_url** 為您的 MCP 伺服器端點\n- 包含認證所需的標頭資訊（API 金鑰、令牌等）\n- 使用 `allowed_tools` 參數限制暴露的工具\n- 設定 `require_approval` 來控制工具執行審批",
             "vscode": "- 打開 VS Code\n- 打開命令面板（`Ctrl+Shift+P` / `Cmd+Shift+P`）\n- 輸入 **MCP: Add Server** 並選擇它\n- 選擇新增到工作區或使用者設定\n- 複製並貼上伺服器配置"
           },
@@ -545,7 +545,7 @@
       "type": "類型"
     },
     "providerInfo": {
-      "apiTooltip": "LobeChat 支持為此提供商使用自定義 API 密鑰。",
+      "apiTooltip": "deepnova 支持為此提供商使用自定義 API 密鑰。",
       "input": "輸入價格",
       "inputTooltip": "每百萬個 Token 的成本",
       "latency": "延遲",

@@ -4,9 +4,9 @@ globs:
 alwaysApply: true
 ---
 
-# LobeChat Cursor Rules System Guide
+# deepnova Cursor Rules System Guide
 
-This document explains how the LobeChat project's Cursor rules system works and serves as an index for manually accessible rules.
+This document explains how the deepnova project's Cursor rules system works and serves as an index for manually accessible rules.
 
 ## 🎯 Core Principle
 

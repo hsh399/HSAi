@@ -1,4 +1,4 @@
-import { NetworkProxySettings } from '@lobechat/electron-client-ipc';
+import { NetworkProxySettings } from '@deepnova/electron-client-ipc';
 import isEqual from 'fast-deep-equal';
 import useSWR, { SWRResponse, mutate } from 'swr';
 import type { StateCreator } from 'zustand/vanilla';

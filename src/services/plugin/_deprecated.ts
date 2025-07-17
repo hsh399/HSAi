@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { PluginModel } from '@/database/_deprecated/models/plugin';
 import { LobeTool } from '@/types/tool';
@@ -27,7 +27,7 @@ export class ClientService implements IPluginService {
     await PluginModel.update(id, value);
     return;
   }
-  async updatePluginManifest(id: string, manifest: LobeChatPluginManifest) {
+  async updatePluginManifest(id: string, manifest: deepnovaPluginManifest) {
     await PluginModel.update(id, { manifest });
   }
 

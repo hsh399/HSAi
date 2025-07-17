@@ -1,8 +1,8 @@
-import { LobeChatPluginManifest, Meta } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest, Meta } from '@lobehub/chat-plugin-sdk';
 
 import { LobeToolType } from './tool';
 
-export type PluginManifestMap = Record<string, LobeChatPluginManifest>;
+export type PluginManifestMap = Record<string, deepnovaPluginManifest>;
 
 export interface CustomPluginMetadata {
   avatar?: string;
@@ -44,7 +44,7 @@ export interface CustomPluginParams {
 export interface LobeToolCustomPlugin {
   customParams?: CustomPluginParams;
   identifier: string;
-  manifest?: LobeChatPluginManifest;
+  manifest?: deepnovaPluginManifest;
   settings?: any;
   type: 'customPlugin';
 }

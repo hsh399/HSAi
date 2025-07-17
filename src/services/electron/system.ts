@@ -1,4 +1,4 @@
-import { ElectronAppState, dispatch } from '@lobechat/electron-client-ipc';
+import { ElectronAppState, dispatch } from '@deepnova/electron-client-ipc';
 
 /**
  * Service class for interacting with Electron's system-level information and actions.

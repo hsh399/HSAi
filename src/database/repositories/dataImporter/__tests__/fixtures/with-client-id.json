@@ -592,7 +592,7 @@
             "MIDJOURNEY_PROXY_URL": " https://api.302.ai",
             "MIDJOURNEY_PROXY_API_SECRET": "sk-1OEpTPKSExItmwmGyGn0F19XPt8Uy6aVrXZn8UPR7W6uUtwp"
           },
-          "inLobeChat": true,
+          "indeepnova": true,
           "activeTaskId": "1742734217290387"
         },
         "error": null,

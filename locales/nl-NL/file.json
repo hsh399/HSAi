@@ -40,7 +40,7 @@
   },
   "networkError": "Kon de kennisbank niet ophalen, controleer uw netwerkverbinding en probeer het opnieuw",
   "notSupportGuide": {
-    "desc": "De huidige implementatie is in client-database modus, waardoor de bestandsbeheerfunctie niet beschikbaar is. Schakel over naar <1>server-database implementatiemodus</1>, of gebruik direct <3>LobeChat Cloud</3>",
+    "desc": "De huidige implementatie is in client-database modus, waardoor de bestandsbeheerfunctie niet beschikbaar is. Schakel over naar <1>server-database implementatiemodus</1>, of gebruik direct <3>deepnova Cloud</3>",
     "features": {
       "allKind": {
         "desc": "Ondersteunt gangbare bestandstypen, waaronder Word, PPT, Excel, PDF, TXT en andere veelvoorkomende documentformaten, evenals JS, Python en andere gangbare codebestanden",

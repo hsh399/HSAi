@@ -1,15 +1,15 @@
 import { and, desc, eq, inArray } from 'drizzle-orm/expressions';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { KnowledgeBaseItem } from '@/types/knowledgeBase';
 
 import { NewKnowledgeBase, knowledgeBaseFiles, knowledgeBases } from '../schemas';
 
 export class KnowledgeBaseModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }
@@ -86,7 +86,7 @@ export class KnowledgeBaseModel {
       .set({ ...value, updatedAt: new Date() })
       .where(and(eq(knowledgeBases.id, id), eq(knowledgeBases.userId, this.userId)));
 
-  static findById = async (db: LobeChatDatabase, id: string) =>
+  static findById = async (db: deepnovaDatabase, id: string) =>
     db.query.knowledgeBases.findFirst({
       where: eq(knowledgeBases.id, id),
     });

@@ -1,4 +1,4 @@
-import { CrawlErrorResult, CrawlSuccessResult } from '@lobechat/web-crawler';
+import { CrawlErrorResult, CrawlSuccessResult } from '@deepnova/web-crawler';
 
 export interface CrawlSinglePageQuery {
   url: string;

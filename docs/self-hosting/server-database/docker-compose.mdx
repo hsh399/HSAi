@@ -1,16 +1,16 @@
 ---
-title: Deploying LobeChat with Docker Compose
+title: Deploying deepnova with Docker Compose
 description: >-
-  Learn how to deploy the LobeChat service using Docker Compose, including configuration tutorials for various services.
+  Learn how to deploy the deepnova service using Docker Compose, including configuration tutorials for various services.
 
 tags:
   - Docker Compose
-  - LobeChat
+  - deepnova
   - Docker Container
   - Deployment Guide
 ---
 
-# Deploying LobeChat Server Database Version with Docker Compose
+# Deploying deepnova Server Database Version with Docker Compose
 
 <div style={{display:"flex", gap: 4}}>
   [![][docker-release-shield]][docker-release-link]
@@ -79,13 +79,13 @@ The script supports the following deployment modes; please choose the appropriat
   After the script finishes running, you need to check the configuration generation report, which includes the accounts and initial login passwords for the Casdoor administrator and user.
 
   <Callout type="warning">
-    Please log in to LobeChat using the user account; the administrator account is only for managing
+    Please log in to deepnova using the user account; the administrator account is only for managing
     Casdoor.
   </Callout>
 
   ```log
   The results of the secure key generation are as follows:
-  LobeChat:
+  deepnova:
     - URL: http://localhost:3210
     - Username: user
     - Password: c66f8c
@@ -127,7 +127,7 @@ The script supports the following deployment modes; please choose the appropriat
 
   ### Access Application
 
-  Visit your LobeChat service at [http://localhost:3210](http://localhost:3210). The account credentials for the application can be found in the report from step `2`.
+  Visit your deepnova service at [http://localhost:3210](http://localhost:3210). The account credentials for the application can be found in the report from step `2`.
 </Steps>
 
 ### Port Mode
@@ -145,13 +145,13 @@ The script supports the following deployment modes; please choose the appropriat
   After the script finishes running, please check the configuration generation report for the Casdoor administrator account, user account, and their initial login passwords.
 
   <Callout type="warning">
-    Please log in to LobeChat using the user account; the administrator account is only for managing
+    Please log in to deepnova using the user account; the administrator account is only for managing
     Casdoor.
   </Callout>
 
   ```log
   The results of the secure key generation are as follows:
-  LobeChat:
+  deepnova:
     - URL: http://your_server_ip:3210
     - Username: user
     - Password: 837e26
@@ -192,7 +192,7 @@ The script supports the following deployment modes; please choose the appropriat
 
   ### Access Application
 
-  You can access your LobeChat service at `http://your_server_ip:3210`. The account credentials for the application can be found in the report from step `2`.
+  You can access your deepnova service at `http://your_server_ip:3210`. The account credentials for the application can be found in the report from step `2`.
 
   <Callout type="warning">
     If your service can accessed via the public network,
@@ -240,7 +240,7 @@ The script supports the following deployment modes; please choose the appropriat
 
   In domain mode, you need to complete the following configurations based on script prompts:
 
-  - Domain setup for the LobeChat service: `lobe.example.com`
+  - Domain setup for the deepnova service: `lobe.example.com`
   - Domain setup for the Minio service: `minio.example.com`
   - Domain setup for the Casdoor service: `auth.example.com`
   - Choose the access protocol: `http` or `https`
@@ -261,13 +261,13 @@ The script supports the following deployment modes; please choose the appropriat
   After the script finishes running, you need to check the configuration generation report, which includes the initial login password for the Casdoor administrator.
 
   <Callout type="warning">
-    Please log in to LobeChat using the user account; the administrator account is only for managing
+    Please log in to deepnova using the user account; the administrator account is only for managing
     Casdoor.
   </Callout>
 
   ```log
   The results of the secure key generation are as follows:
-  LobeChat:
+  deepnova:
     - URL: https://lobe.example.com
     - Username: user
     - Password: 837e26
@@ -308,7 +308,7 @@ The script supports the following deployment modes; please choose the appropriat
 
   ### Access Application
 
-  You can access your LobeChat service via `https://lobe.example.com`. The account credentials for the application can be found in the report from step `3`.
+  You can access your deepnova service via `https://lobe.example.com`. The account credentials for the application can be found in the report from step `3`.
 
   <Callout type="warning">
     If your service can accessed via the public network,
@@ -320,7 +320,7 @@ The script supports the following deployment modes; please choose the appropriat
 
 ## Custom Deployment
 
-This section mainly introduces the configurations that need to be modified to customize the deployment of the LobeChat service in different network environments. Before starting, you can download the [Docker Compose configuration file](https://raw.githubusercontent.com/lobehub/lobe-chat/HEAD/docker-compose/local/docker-compose.yml) and the [environment variable configuration file](https://raw.githubusercontent.com/lobehub/lobe-chat/refs/heads/main/docker-compose/local/.env.example).
+This section mainly introduces the configurations that need to be modified to customize the deployment of the deepnova service in different network environments. Before starting, you can download the [Docker Compose configuration file](https://raw.githubusercontent.com/lobehub/lobe-chat/HEAD/docker-compose/local/docker-compose.yml) and the [environment variable configuration file](https://raw.githubusercontent.com/lobehub/lobe-chat/refs/heads/main/docker-compose/local/.env.example).
 
 ```sh
 curl -O https://raw.githubusercontent.com/lobehub/lobe-chat/HEAD/docker-compose/local/docker-compose.yml
@@ -335,14 +335,14 @@ mv .env.example .env
 
 ### Prerequisites
 
-Generally, to fully run the LobeChat database version, you will need at least the following four services:
+Generally, to fully run the deepnova database version, you will need at least the following four services:
 
-- The LobeChat database version itself
+- The deepnova database version itself
 - PostgreSQL database with PGVector plugin
 - Object storage service that supports S3 protocol
-- An SSO authentication service supported by LobeChat
+- An SSO authentication service supported by deepnova
 
-These services can be combined through self-hosting or online cloud services to meet various deployment needs. In this article, we provide a Docker Compose configuration entirely based on open-source self-hosted services, which can be used directly to start the LobeChat database version or modified to suit your requirements.
+These services can be combined through self-hosting or online cloud services to meet various deployment needs. In this article, we provide a Docker Compose configuration entirely based on open-source self-hosted services, which can be used directly to start the deepnova database version or modified to suit your requirements.
 
 We use [MinIO](https://github.com/minio/minio) as the local S3 object storage service and [Casdoor](https://github.com/casdoor/casdoor) as the local authentication service by default.
 
@@ -357,15 +357,15 @@ Now, we will introduce the necessary configurations for running these services:
 
 1. Casdoor
 
-- LobeChat requires communication with Casdoor, so you need to configure Casdoor's Issuer.
+- deepnova requires communication with Casdoor, so you need to configure Casdoor's Issuer.
 
 ```env
 AUTH_CASDOOR_ISSUER=https://auth.example.com
 ```
 
-This configuration will affect LobeChat's login authentication service, and you need to ensure that the URL of the Casdoor service is correct. You can find common manifestations and solutions for errors in this configuration in the [FAQ](#faq).
+This configuration will affect deepnova's login authentication service, and you need to ensure that the URL of the Casdoor service is correct. You can find common manifestations and solutions for errors in this configuration in the [FAQ](#faq).
 
-- Additionally, you need to allow the callback URL in Casdoor to point to the LobeChat address:
+- Additionally, you need to allow the callback URL in Casdoor to point to the deepnova address:
 
 Please add a line in the `Authentication -> Application` -> `<Application ID, default is app-built-in>` -> `Redirect URI` in Casdoor's web panel:
 
@@ -381,7 +381,7 @@ origin=https://auth.example.com
 
 2. MinIO
 
-- LobeChat needs to provide a public access URL for object files for the LLM service provider, hence you need to configure MinIO's Endpoint.
+- deepnova needs to provide a public access URL for object files for the LLM service provider, hence you need to configure MinIO's Endpoint.
 
 ```env
 S3_PUBLIC_DOMAIN=https://minio.example.com
@@ -432,18 +432,18 @@ Solutions:
 lobe-chat      | [auth][error] TypeError: fetch failed
 ```
 
-Cause: LobeChat cannot access the authentication service.
+Cause: deepnova cannot access the authentication service.
 
 Solutions:
 
-- Check whether your authentication service is running properly and whether LobeChat's network can reach the authentication service.
+- Check whether your authentication service is running properly and whether deepnova's network can reach the authentication service.
 
-- A straightforward troubleshooting method is to use the `curl` command in the LobeChat container terminal to access your authentication service at `https://auth.example.com/.well-known/openid-configuration`. If JSON format data is returned, it indicates your authentication service is functioning correctly.
+- A straightforward troubleshooting method is to use the `curl` command in the deepnova container terminal to access your authentication service at `https://auth.example.com/.well-known/openid-configuration`. If JSON format data is returned, it indicates your authentication service is functioning correctly.
 
 ````markdown
 ## Extended Configuration
 
-To enhance your LobeChat service, you can perform the following extended configurations according to your needs.
+To enhance your deepnova service, you can perform the following extended configurations according to your needs.
 
 ### Use MinIO to Store Casdoor Avatars
 
@@ -518,7 +518,7 @@ In the following, it is assumed that in addition to the above services, you are 
 
 The domain and corresponding service port descriptions are as follows:
 
-- `lobe.example.com`: This is your LobeChat service domain, which needs to reverse proxy to the LobeChat service port, default is `3210`.
+- `lobe.example.com`: This is your deepnova service domain, which needs to reverse proxy to the deepnova service port, default is `3210`.
 - `auth.example.com`: This is your Logto UI domain, which needs to reverse proxy to the Logto WebUI service port, default is `8000`.
 - `minio.example.com`: This is your MinIO API domain, which needs to reverse proxy to the MinIO API service port, default is `9000`.
 - `minio-ui.example.com`: Optional, this is your MinIO UI domain, which needs to reverse proxy to the MinIO WebUI service port, default is `9001`.
@@ -631,7 +631,7 @@ After logging in, perform the following actions:
 1. In `User Management -> Organizations`, add a new organization with the name and display name `Lobe Users`. Keep the rest as default.
 2. In `Authentication -> Apps`, add a new application.
 
-- Name and display name should be `LobeChat`.
+- Name and display name should be `deepnova`.
 - Organization should be `Lobe Users`.
 - Add a line in Redirect URLs as `https://lobe.example.com/api/auth/callback/casdoor`.
 - Disable all login methods except password.
@@ -649,7 +649,7 @@ After logging in, perform the following actions:
 This article uses MinIO as an example to explain the configuration process. If you are using another S3 service provider, please refer to their documentation for configuration.
 
 <Callout type="warning">
-  Please remember to configure the corresponding S3 service provider's CORS settings to ensure that LobeChat can access the S3 service correctly.
+  Please remember to configure the corresponding S3 service provider's CORS settings to ensure that deepnova can access the S3 service correctly.
 
   In this document, you need to allow cross-origin requests from `https://lobe.example.com`. This can either be configured in MinIO WebUI under `Configuration - API - Cors Allow Origin`, or in the Docker Compose configuration under `minio - environment - MINIO_API_CORS_ALLOW_ORIGIN`.
 
@@ -667,13 +667,13 @@ You first need to access the WebUI for configuration:
 
    <Image alt="Create MinIO Access Key" src="https://github.com/user-attachments/assets/72f02ce5-9991-425b-9864-9113ee1ed6bf" />
 
-3. Restart the LobeChat service:
+3. Restart the deepnova service:
 
    ```sh
    docker compose up -d
    ```
 
-At this point, you have successfully deployed the LobeChat database version, and you can access your LobeChat service at `https://lobe.example.com`.
+At this point, you have successfully deployed the deepnova database version, and you can access your deepnova service at `https://lobe.example.com`.
 
 #### Configuration Files
 
@@ -700,7 +700,7 @@ CASDOOR_PORT=8000
 MINIO_PORT=9000
 
 # Postgres related, which are the necessary environment variables for DB
-LOBE_DB_NAME=lobechat
+LOBE_DB_NAME=deepnova
 POSTGRES_PASSWORD=uWNZugjBqixf8dxC
 
 # Casdoor secret
@@ -729,7 +729,7 @@ services:
       - '${MINIO_PORT}:${MINIO_PORT}' # MinIO API
       - '9001:9001' # MinIO Console
       - '${CASDOOR_PORT}:${CASDOOR_PORT}' # Casdoor
-      - '${LOBE_PORT}:3210' # LobeChat
+      - '${LOBE_PORT}:3210' # deepnova
     command: tail -f /dev/null
     networks:
       - lobe-network

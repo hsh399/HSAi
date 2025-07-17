@@ -1,4 +1,4 @@
-import { LocalFileItem } from '@lobechat/electron-client-ipc';
+import { LocalFileItem } from '@deepnova/electron-client-ipc';
 import { ActionIcon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import dayjs from 'dayjs';

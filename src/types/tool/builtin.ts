@@ -1,8 +1,8 @@
-import { LobeChatPluginApi, Meta } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginApi, Meta } from '@lobehub/chat-plugin-sdk';
 import { ReactNode } from 'react';
 
 export interface BuiltinToolManifest {
-  api: LobeChatPluginApi[];
+  api: deepnovaPluginApi[];
 
   /**
    * Plugin name

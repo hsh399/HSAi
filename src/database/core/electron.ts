@@ -10,12 +10,12 @@ import { electronIpcClient } from '@/server/modules/ElectronIPCClient';
 import { MigrationTableItem } from '@/types/clientDB';
 
 import migrations from '../client/migrations.json';
-import { LobeChatDatabase } from '../type';
+import { deepnovaDatabase } from '../type';
 
 // 用于实例管理的全局对象
 interface LobeGlobal {
-  pgDB?: LobeChatDatabase;
-  pgDBInitPromise?: Promise<LobeChatDatabase>;
+  pgDB?: deepnovaDatabase;
+  pgDBInitPromise?: Promise<deepnovaDatabase>;
   pgDBLock?: {
     acquired: boolean;
     lockPath: string;
@@ -120,7 +120,7 @@ process.on('uncaughtException', (error) => {
   releaseLock();
 });
 
-const migrateDatabase = async (db: LobeChatDatabase): Promise<void> => {
+const migrateDatabase = async (db: deepnovaDatabase): Promise<void> => {
   try {
     let hash: string | undefined;
     const cacheHash = await electronIpcClient.getDatabaseSchemaHash();
@@ -209,7 +209,7 @@ const checkAndCleanupExistingInstance = async () => {
 
 let isInitializing = false;
 
-export const getPgliteInstance = async (): Promise<LobeChatDatabase> => {
+export const getPgliteInstance = async (): Promise<deepnovaDatabase> => {
   try {
     console.log(
       'Getting PGlite instance, state:',
@@ -285,7 +285,7 @@ export const getPgliteInstance = async (): Promise<LobeChatDatabase> => {
         console.log('PGlite state:', client.ready);
 
         // 创建 Drizzle 数据库实例
-        const db = pgliteDrizzle({ client, schema }) as unknown as LobeChatDatabase;
+        const db = pgliteDrizzle({ client, schema }) as unknown as deepnovaDatabase;
 
         // 执行迁移
         await migrateDatabase(db);

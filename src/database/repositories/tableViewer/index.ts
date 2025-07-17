@@ -1,7 +1,7 @@
 import { sql } from 'drizzle-orm';
 import pMap from 'p-map';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import {
   FilterCondition,
   PaginationParams,
@@ -11,9 +11,9 @@ import {
 
 export class TableViewerRepo {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

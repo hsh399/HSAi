@@ -1,4 +1,4 @@
-import { RenameLocalFileParams } from '@lobechat/electron-client-ipc';
+import { RenameLocalFileParams } from '@deepnova/electron-client-ipc';
 import { Icon } from '@lobehub/ui';
 import { createStyles } from 'antd-style';
 import { ArrowRightIcon } from 'lucide-react';

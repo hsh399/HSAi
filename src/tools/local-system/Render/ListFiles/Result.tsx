@@ -1,4 +1,4 @@
-import { LocalFileItem } from '@lobechat/electron-client-ipc';
+import { LocalFileItem } from '@deepnova/electron-client-ipc';
 import { Skeleton } from 'antd';
 import { memo } from 'react';
 import { Flexbox } from 'react-layout-kit';

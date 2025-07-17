@@ -2,7 +2,7 @@ import { and, asc, desc, eq } from 'drizzle-orm/expressions';
 import { isEmpty } from 'lodash-es';
 
 import { DEFAULT_MODEL_PROVIDER_LIST } from '@/config/modelProviders';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { ModelProvider } from '@/libs/model-runtime';
 import {
   AiProviderDetailItem,
@@ -21,9 +21,9 @@ type EncryptUserKeyVaults = (keyVaults: string) => Promise<string>;
 
 export class AiProviderModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

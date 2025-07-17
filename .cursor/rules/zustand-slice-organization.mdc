@@ -3,13 +3,13 @@ description:
 globs: src/store/**
 alwaysApply: false
 ---
-# LobeChat Zustand Store Slice 组织架构
+# deepnova Zustand Store Slice 组织架构
 
-本文档描述了 LobeChat 项目中 Zustand Store 的模块化 Slice 组织方式，展示如何通过分片架构管理复杂的应用状态。
+本文档描述了 deepnova 项目中 Zustand Store 的模块化 Slice 组织方式，展示如何通过分片架构管理复杂的应用状态。
 
 ## 顶层 Store 结构
 
-LobeChat 的 `chat` store (`src/store/chat/`) 采用模块化的 slice 结构来组织状态和逻辑。
+deepnova 的 `chat` store (`src/store/chat/`) 采用模块化的 slice 结构来组织状态和逻辑。
 
 ### 关键聚合文件
 

@@ -1,9 +1,9 @@
-import { dispatch } from '@lobechat/electron-client-ipc';
+import { dispatch } from '@deepnova/electron-client-ipc';
 import { describe, expect, it, vi } from 'vitest';
 
 import { electronDevtoolsService } from '../devtools';
 
-vi.mock('@lobechat/electron-client-ipc', () => ({
+vi.mock('@deepnova/electron-client-ipc', () => ({
   dispatch: vi.fn(),
 }));
 

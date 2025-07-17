@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest, pluginManifestSchema } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest, pluginManifestSchema } from '@lobehub/chat-plugin-sdk';
 import { uniqBy } from 'lodash-es';
 
 import { API_ENDPOINTS } from '@/services/_url';
@@ -40,8 +40,8 @@ const fetchJSON = async <T = any>(url: string, proxy = false): Promise<T> => {
 
 export const convertOpenAIManifestToLobeManifest = (
   data: OpenAIPluginManifest,
-): LobeChatPluginManifest => {
-  const manifest: LobeChatPluginManifest = {
+): deepnovaPluginManifest => {
+  const manifest: deepnovaPluginManifest = {
     api: [],
     homepage: data.legal_info_url,
     identifier: data.name_for_model,
@@ -82,14 +82,14 @@ export const convertOpenAIManifestToLobeManifest = (
 export const getToolManifest = async (
   url?: string,
   useProxy: boolean = false,
-): Promise<LobeChatPluginManifest> => {
+): Promise<deepnovaPluginManifest> => {
   // 1. valid plugin
   if (!url) {
     throw new TypeError('noManifest');
   }
 
   // 2. 发送请求
-  let data = await fetchJSON<LobeChatPluginManifest>(url, useProxy);
+  let data = await fetchJSON<deepnovaPluginManifest>(url, useProxy);
 
   // @ts-ignore
   // if there is a description_for_model, it is an OpenAI plugin
@@ -129,7 +129,7 @@ export const getToolManifest = async (
  *
  */
 export const convertPluginManifestToToolsCalling = (
-  manifests: LobeChatPluginManifest[],
+  manifests: deepnovaPluginManifest[],
 ): ChatCompletionTool[] => {
   const list = manifests.flatMap((manifest) =>
     manifest.api.map((m) => ({

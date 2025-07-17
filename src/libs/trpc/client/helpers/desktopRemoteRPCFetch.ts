@@ -1,4 +1,4 @@
-import { ProxyTRPCRequestParams, dispatch } from '@lobechat/electron-client-ipc';
+import { ProxyTRPCRequestParams, dispatch } from '@deepnova/electron-client-ipc';
 import debug from 'debug';
 
 import { isDesktop } from '@/const/version';

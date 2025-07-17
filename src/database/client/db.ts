@@ -16,7 +16,7 @@ import migrations from './migrations.json';
 
 const pgliteSchemaHashCache = 'LOBE_CHAT_PGLITE_SCHEMA_HASH';
 
-const DB_NAME = 'lobechat';
+const DB_NAME = 'deepnova';
 type DrizzleInstance = PgliteDatabase<typeof schema>;
 
 interface onErrorState {

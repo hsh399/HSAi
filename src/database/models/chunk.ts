@@ -2,7 +2,7 @@ import { cosineDistance, count, sql } from 'drizzle-orm';
 import { and, asc, desc, eq, inArray, isNull } from 'drizzle-orm/expressions';
 import { chunk } from 'lodash-es';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { ChunkMetadata, FileChunk } from '@/types/chunk';
 
 import {
@@ -18,9 +18,9 @@ import {
 export class ChunkModel {
   private userId: string;
 
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

@@ -10,8 +10,8 @@ import {
   OpenLocalFolderParams,
   RenameLocalFileResult,
   WriteLocalFileParams,
-} from '@lobechat/electron-client-ipc';
-import { SYSTEM_FILES_TO_IGNORE, loadFile } from '@lobechat/file-loaders';
+} from '@deepnova/electron-client-ipc';
+import { SYSTEM_FILES_TO_IGNORE, loadFile } from '@deepnova/file-loaders';
 import { shell } from 'electron';
 import * as fs from 'node:fs';
 import { rename as renamePromise } from 'node:fs/promises';

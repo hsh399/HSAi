@@ -41,7 +41,7 @@ export const generalActionSlice: StateCreator<
     if (isDesktop) {
       (async () => {
         try {
-          const { dispatch } = await import('@lobechat/electron-client-ipc');
+          const { dispatch } = await import('@deepnova/electron-client-ipc');
 
           await dispatch('updateLocale', locale);
         } catch (error) {
@@ -58,7 +58,7 @@ export const generalActionSlice: StateCreator<
     if (isDesktop && !skipBroadcast) {
       (async () => {
         try {
-          const { dispatch } = await import('@lobechat/electron-client-ipc');
+          const { dispatch } = await import('@deepnova/electron-client-ipc');
           await dispatch('updateThemeMode', themeMode);
         } catch (error) {
           console.error('Failed to update theme in main process:', error);

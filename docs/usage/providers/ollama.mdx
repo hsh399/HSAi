@@ -1,7 +1,7 @@
 ---
-title: Using Ollama in LobeChat
+title: Using Ollama in deepnova
 description: >-
-  Learn how to use Ollama in LobeChat, run LLM locally, and experience cutting-edge AI usage.
+  Learn how to use Ollama in deepnova, run LLM locally, and experience cutting-edge AI usage.
 
 tags:
   - Ollama
@@ -11,15 +11,15 @@ tags:
   - API Key
 ---
 
-# Using Ollama in LobeChat
+# Using Ollama in deepnova
 
-<Image alt={'Using Ollama in LobeChat'} borderless cover src={'https://github.com/lobehub/lobe-chat/assets/17870709/f579b39b-e771-402c-a1d1-620e57a10c75'} />
+<Image alt={'Using Ollama in deepnova'} borderless cover src={'https://github.com/lobehub/lobe-chat/assets/17870709/f579b39b-e771-402c-a1d1-620e57a10c75'} />
 
-Ollama is a powerful framework for running large language models (LLMs) locally, supporting various language models including Llama 2, Mistral, and more. Now, LobeChat supports integration with Ollama, meaning you can easily enhance your application by using the language models provided by Ollama in LobeChat.
+Ollama is a powerful framework for running large language models (LLMs) locally, supporting various language models including Llama 2, Mistral, and more. Now, deepnova supports integration with Ollama, meaning you can easily enhance your application by using the language models provided by Ollama in deepnova.
 
-This document will guide you on how to use Ollama in LobeChat:
+This document will guide you on how to use Ollama in deepnova:
 
-<Video alt="demonstration of using Ollama in LobeChat" height={580} src="https://github.com/lobehub/lobe-chat/assets/28616219/c32b56db-c6a1-4876-9bc3-acbd37ec0c0c" />
+<Video alt="demonstration of using Ollama in deepnova" height={580} src="https://github.com/lobehub/lobe-chat/assets/28616219/c32b56db-c6a1-4876-9bc3-acbd37ec0c0c" />
 
 ## Using Ollama on macOS
 
@@ -38,11 +38,11 @@ This document will guide you on how to use Ollama in LobeChat:
 
   After setting up, restart the Ollama application.
 
-  ### Conversing with Local Large Models in LobeChat
+  ### Conversing with Local Large Models in deepnova
 
-  Now, you can start conversing with the local LLM in LobeChat.
+  Now, you can start conversing with the local LLM in deepnova.
 
-  <Image alt="Chat with llama3 in LobeChat" height="573" src="https://github.com/lobehub/lobe-chat/assets/28616219/7f9a9a9f-fd91-4f59-aac9-3f26c6d49a1e" />
+  <Image alt="Chat with llama3 in deepnova" height="573" src="https://github.com/lobehub/lobe-chat/assets/28616219/7f9a9a9f-fd91-4f59-aac9-3f26c6d49a1e" />
 </Steps>
 
 ## Using Ollama on Windows
@@ -64,9 +64,9 @@ This document will guide you on how to use Ollama in LobeChat:
   4. Click `OK/Apply` to save and restart the system.
   5. Run `Ollama` again.
 
-  ### Conversing with Local Large Models in LobeChat
+  ### Conversing with Local Large Models in deepnova
 
-  Now, you can start conversing with the local LLM in LobeChat.
+  Now, you can start conversing with the local LLM in deepnova.
 </Steps>
 
 ## Using Ollama on Linux
@@ -108,9 +108,9 @@ This document will guide you on how to use Ollama in LobeChat:
   sudo systemctl restart ollama
   ```
 
-  ### Conversing with Local Large Models in LobeChat
+  ### Conversing with Local Large Models in deepnova
 
-  Now, you can start conversing with the local LLM in LobeChat.
+  Now, you can start conversing with the local LLM in deepnova.
 </Steps>
 
 ## Deploying Ollama using Docker
@@ -134,20 +134,20 @@ This document will guide you on how to use Ollama in LobeChat:
   docker run -d --gpus=all -v ollama:/root/.ollama -e OLLAMA_ORIGINS="*" -p 11434:11434 --name ollama ollama/ollama
   ```
 
-  ### Conversing with Local Large Models in LobeChat
+  ### Conversing with Local Large Models in deepnova
 
-  Now, you can start conversing with the local LLM in LobeChat.
+  Now, you can start conversing with the local LLM in deepnova.
 </Steps>
 
 ## Installing Ollama Models
 
 Ollama supports various models, which you can view in the [Ollama Library](https://ollama.com/library) and choose the appropriate model based on your needs.
 
-### Installation in LobeChat
+### Installation in deepnova
 
-In LobeChat, we have enabled some common large language models by default, such as llama3, Gemma, Mistral, etc. When you select a model for conversation, we will prompt you to download that model.
+In deepnova, we have enabled some common large language models by default, such as llama3, Gemma, Mistral, etc. When you select a model for conversation, we will prompt you to download that model.
 
-<Image alt="LobeChat guide your to install Ollama model" height="460" src="https://github.com/lobehub/lobe-chat/assets/28616219/4e81decc-776c-43b8-9a54-dfb43e9f601a" />
+<Image alt="deepnova guide your to install Ollama model" height="460" src="https://github.com/lobehub/lobe-chat/assets/28616219/4e81decc-776c-43b8-9a54-dfb43e9f601a" />
 
 Once downloaded, you can start conversing.
 
@@ -169,5 +169,5 @@ You can find Ollama's configuration options in `Settings` -> `AI Service Provide
 
 <Callout type={'info'}>
   Visit [Integrating with Ollama](/docs/self-hosting/examples/ollama) to learn how to deploy
-  LobeChat to meet integration needs with Ollama.
+  deepnova to meet integration needs with Ollama.
 </Callout>

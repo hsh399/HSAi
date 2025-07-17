@@ -218,7 +218,7 @@
       "edit": "Chỉnh sửa plugin tùy chỉnh"
     },
     "type": {
-      "lobe": "Plugin LobeChat",
+      "lobe": "Plugin deepnova",
       "openai": "Plugin OpenAI"
     },
     "update": "Cập nhật",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "Đã cài đặt",
       "mcp": "Tiện ích MCP",
-      "old": "Plugin LobeChat"
+      "old": "Plugin deepnova"
     },
     "title": "Cửa hàng plugin"
   },

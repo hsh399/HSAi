@@ -2,7 +2,7 @@
 import { and, eq } from 'drizzle-orm/expressions';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { sleep } from '@/utils/sleep';
 
 import {
@@ -16,7 +16,7 @@ import {
 import { KnowledgeBaseModel } from '../knowledgeBase';
 import { getTestDB } from './_util';
 
-const serverDB: LobeChatDatabase = await getTestDB();
+const serverDB: deepnovaDatabase = await getTestDB();
 
 const userId = 'session-group-model-test-user-id';
 const knowledgeBaseModel = new KnowledgeBaseModel(serverDB, userId);

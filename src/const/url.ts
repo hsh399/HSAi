@@ -9,7 +9,7 @@ import { INBOX_SESSION_ID } from './session';
 
 export const UTM_SOURCE = 'chat_preview';
 
-export const OFFICIAL_URL = 'https://lobechat.com';
+export const OFFICIAL_URL = 'https://deepnova.com';
 export const OFFICIAL_PREVIEW_URL = 'https://chat-preview.lobehub.com';
 export const OFFICIAL_SITE = 'https://lobehub.com';
 

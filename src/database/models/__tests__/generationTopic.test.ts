@@ -2,7 +2,7 @@
 import { eq } from 'drizzle-orm/expressions';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { FileService } from '@/server/services/file';
 import { ImageGenerationTopic } from '@/types/generation';
 
@@ -19,7 +19,7 @@ vi.mock('@/server/services/file', () => ({
   })),
 }));
 
-const serverDB: LobeChatDatabase = await getTestDB();
+const serverDB: deepnovaDatabase = await getTestDB();
 
 const userId = 'generation-topic-test-user';
 const otherUserId = 'other-user';

@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { safeParseJSON } from '@/utils/safeParseJSON';
 
@@ -14,7 +14,7 @@ interface McpServers {
 }
 
 interface ParsedMcpInput {
-  manifest?: LobeChatPluginManifest;
+  manifest?: deepnovaPluginManifest;
   mcpServers?: McpServers;
 }
 

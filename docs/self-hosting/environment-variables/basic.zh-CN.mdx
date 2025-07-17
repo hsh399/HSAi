@@ -1,8 +1,8 @@
 ---
-title: LobeChat 环境变量配置指南
-description: 了解如何使用环境变量自定义设置 LobeChat 部署，包括访问密码、单点登录、basePath 设置等。
+title: deepnova 环境变量配置指南
+description: 了解如何使用环境变量自定义设置 deepnova 部署，包括访问密码、单点登录、basePath 设置等。
 tags:
-  - LobeChat
+  - deepnova
   - 环境变量
   - 配置指南
   - 单点登录
@@ -12,14 +12,14 @@ tags:
 
 # 环境变量
 
-LobeChat 在部署时提供了一些额外的配置项，你可以使用环境变量进行自定义设置。
+deepnova 在部署时提供了一些额外的配置项，你可以使用环境变量进行自定义设置。
 
 ## 通用变量
 
 ### `ACCESS_CODE`
 
 - 类型：可选
-- 描述：添加访问 LobeChat 服务的密码，你可以设置一个长密码以防被爆破
+- 描述：添加访问 deepnova 服务的密码，你可以设置一个长密码以防被爆破
 - 默认值：-
 - 示例：`awCTe)re_r74` or `rtrt_ewee3@09!`
 
@@ -37,18 +37,18 @@ LobeChat 在部署时提供了一些额外的配置项，你可以使用环境�
 ### `NEXT_PUBLIC_BASE_PATH`
 
 - 类型：可选
-- 描述：为 LobeChat 添加 `basePath`
+- 描述：为 deepnova 添加 `basePath`
 - 默认值: `-`
 - 示例: `/test`
 
 ### `DEFAULT_AGENT_CONFIG`
 
 - 类型：可选
-- 描述：用于配置 LobeChat 默认助理的默认配置。它支持多种数据类型和结构，包括键值对、嵌套字段、数组值等。
+- 描述：用于配置 deepnova 默认助理的默认配置。它支持多种数据类型和结构，包括键值对、嵌套字段、数组值等。
 - 默认值：`-`
 - 示例：`'model=gpt-4-1106-preview;params.max_tokens=300;plugins=search-engine,lobe-image-designer'`
 
-`DEFAULT_AGENT_CONFIG` 用于配置 LobeChat 默认助理的默认配置。它支持多种数据类型和结构，包括键值对、嵌套字段、数组值等。下表详细说明了 `DEFAULT_AGENT_CONFIG` 环境变量的配置项、示例以及相应解释：
+`DEFAULT_AGENT_CONFIG` 用于配置 deepnova 默认助理的默认配置。它支持多种数据类型和结构，包括键值对、嵌套字段、数组值等。下表详细说明了 `DEFAULT_AGENT_CONFIG` 环境变量的配置项、示例以及相应解释：
 
 | 配置项类型 | 示例                                                                                                                      | 解释                                                    |
 | ----- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------- |
@@ -70,7 +70,7 @@ LobeChat 在部署时提供了一些额外的配置项，你可以使用环境�
 ### `SYSTEM_AGENT`
 
 - 类型：可选
-- 描述：用于配置 LobeChat 系统助手（如主题生成、翻译等功能）的模型和供应商。
+- 描述：用于配置 deepnova 系统助手（如主题生成、翻译等功能）的模型和供应商。
 - 默认值：`-`
 - 示例：`default=ollama/deepseek-v3` 或 `topic=openai/gpt-4,translation=anthropic/claude-1`
 
@@ -101,7 +101,7 @@ LobeChat 在部署时提供了一些额外的配置项，你可以使用环境�
 ### `FEATURE_FLAGS`
 
 - 类型：可选
-- 描述：用于控制 LobeChat 的特性功能，支持多个功能标志，使用 `+` 增加一个功能，使用 `-` 来关闭一个功能，多个功能标志之间使用英文逗号 `,` 隔开，最外层建议添加引号 `"` 以避免解析错误。
+- 描述：用于控制 deepnova 的特性功能，支持多个功能标志，使用 `+` 增加一个功能，使用 `-` 来关闭一个功能，多个功能标志之间使用英文逗号 `,` 隔开，最外层建议添加引号 `"` 以避免解析错误。
 - 默认值：`-`
 - 示例：`"-welcome_suggest"`
 
@@ -153,7 +153,7 @@ LobeChat 在部署时提供了一些额外的配置项，你可以使用环境�
 ### `PLUGINS_INDEX_URL`
 
 - 类型：可选
-- 描述：LobeChat 插件市场的索引地址，如果你自行部署了插件市场的服务，可以使用该变量来覆盖默认的插件市场地址
+- 描述：deepnova 插件市场的索引地址，如果你自行部署了插件市场的服务，可以使用该变量来覆盖默认的插件市场地址
 - 默认值：`https://chat-plugins.lobehub.com`
 
 ### `PLUGIN_SETTINGS`
@@ -182,5 +182,5 @@ LobeChat 在部署时提供了一些额外的配置项，你可以使用环境�
 ### `AGENTS_INDEX_URL`
 
 - 类型：可选
-- 描述：LobeChat 助手市场的索引地址，如果你自行部署了助手市场的服务，可以使用该变量来覆盖默认的市场地址
+- 描述：deepnova 助手市场的索引地址，如果你自行部署了助手市场的服务，可以使用该变量来覆盖默认的市场地址
 - 默认值：`https://chat-agents.lobehub.com`

@@ -1,5 +1,5 @@
 import { DownloadOutlined } from '@ant-design/icons';
-import { UpdateInfo, useWatchBroadcast } from '@lobechat/electron-client-ipc';
+import { UpdateInfo, useWatchBroadcast } from '@deepnova/electron-client-ipc';
 import { Button, Icon } from '@lobehub/ui';
 import { Badge, Popover, Progress, Tooltip, theme } from 'antd';
 import { createStyles } from 'antd-style';

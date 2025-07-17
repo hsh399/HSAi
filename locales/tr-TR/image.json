@@ -72,7 +72,7 @@
     }
   },
   "notSupportGuide": {
-    "desc": "Mevcut dağıtım örneği istemci veritabanı modundadır, AI resim oluşturma özelliği kullanılamaz. Lütfen <1>sunucu veritabanı dağıtım moduna</1> geçin veya doğrudan <3>LobeChat Cloud</3> kullanın",
+    "desc": "Mevcut dağıtım örneği istemci veritabanı modundadır, AI resim oluşturma özelliği kullanılamaz. Lütfen <1>sunucu veritabanı dağıtım moduna</1> geçin veya doğrudan <3>deepnova Cloud</3> kullanın",
     "features": {
       "fileIntegration": {
         "desc": "Dosya yönetim sistemi ile derin entegrasyon, oluşturulan resimler otomatik olarak dosya sistemine kaydedilir, merkezi yönetim ve organizasyon desteklenir",

@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import { PluginModel } from '@/database/_deprecated/models/plugin';
@@ -33,7 +33,7 @@ describe('PluginService', () => {
       // Arrange
       const fakePlugin = {
         identifier: 'test-plugin',
-        manifest: { name: 'TestPlugin', version: '1.0.0' } as unknown as LobeChatPluginManifest,
+        manifest: { name: 'TestPlugin', version: '1.0.0' } as unknown as deepnovaPluginManifest,
         type: 'plugin',
       } as InstallPluginParams;
       vi.mocked(PluginModel.create).mockResolvedValue(fakePlugin);
@@ -119,7 +119,7 @@ describe('PluginService', () => {
     it('should update a plugin manifest', async () => {
       // Arrange
       const id = 'plugin-id';
-      const manifest = { name: 'NewPluginManifest' } as unknown as LobeChatPluginManifest;
+      const manifest = { name: 'NewPluginManifest' } as unknown as deepnovaPluginManifest;
       vi.mocked(PluginModel.update).mockResolvedValue(1);
 
       // Act

@@ -218,7 +218,7 @@
       "edit": "사용자 정의 플러그인 편집"
     },
     "type": {
-      "lobe": "LobeChat 플러그인",
+      "lobe": "deepnova 플러그인",
       "openai": "OpenAI 플러그인"
     },
     "update": "업데이트",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "설치됨",
       "mcp": "MCP 플러그인",
-      "old": "LobeChat 플러그인"
+      "old": "deepnova 플러그인"
     },
     "title": "플러그인 스토어"
   },

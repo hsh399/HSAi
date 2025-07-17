@@ -17,11 +17,11 @@ import {
   userSettings,
   users,
 } from '@/database/schemas';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 
 import { DATA_EXPORT_CONFIG, DataExporterRepos } from './index';
 
-let db = clientDB as LobeChatDatabase;
+let db = clientDB as deepnovaDatabase;
 
 // 设置测试数据
 describe('DataExporterRepos', () => {

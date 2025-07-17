@@ -65,7 +65,7 @@ export const LobeZhipuAI = createOpenAICompatibleRuntime({
       headers: {
         'Authorization': `Bearer ${client.apiKey}`,
         'Bigmodel-Organization': 'lobehub',
-        'Bigmodel-Project': 'lobechat',
+        'Bigmodel-Project': 'deepnova',
       },
       method: 'GET',
     });

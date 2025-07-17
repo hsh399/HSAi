@@ -16,7 +16,7 @@ import {
   nextauthVerificationTokens,
   users,
 } from '@/database/schemas';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { LobeNextAuthDbAdapter } from '@/libs/next-auth/adapter';
 
 let serverDB = await getTestDBInstance();

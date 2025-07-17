@@ -1,4 +1,4 @@
-import { useWatchBroadcast } from '@lobechat/electron-client-ipc';
+import { useWatchBroadcast } from '@deepnova/electron-client-ipc';
 import { useTheme } from 'antd-style';
 import { rgba } from 'polished';
 import { useEffect } from 'react';

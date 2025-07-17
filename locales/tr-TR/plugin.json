@@ -218,7 +218,7 @@
       "edit": "Özel Eklentiyi Düzenle"
     },
     "type": {
-      "lobe": "LobeChat Eklentisi",
+      "lobe": "deepnova Eklentisi",
       "openai": "OpenAI Eklentisi"
     },
     "update": "Güncelle",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "Yüklü",
       "mcp": "MCP Eklentisi",
-      "old": "LobeChat Eklentisi"
+      "old": "deepnova Eklentisi"
     },
     "title": "Eklenti Mağazası"
   },

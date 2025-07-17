@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { t } from 'i18next';
 import { merge } from 'lodash-es';
 import { StateCreator } from 'zustand/vanilla';
@@ -45,7 +45,7 @@ export const createCustomPluginSlice: StateCreator<
 
     try {
       updateInstallLoadingState(id, true);
-      let manifest: LobeChatPluginManifest;
+      let manifest: deepnovaPluginManifest;
       // mean this is a mcp plugin
       if (!!plugin.customParams?.mcp) {
         const url = plugin.customParams?.mcp?.url;

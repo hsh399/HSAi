@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { act, renderHook } from '@testing-library/react';
 import useSWR from 'swr';
 import { Mock, afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
@@ -340,7 +340,7 @@ describe('useToolStore:pluginStore', () => {
               manifest: {
                 identifier: pluginIdentifier,
                 meta: {},
-              } as LobeChatPluginManifest,
+              } as deepnovaPluginManifest,
             },
           ],
         });

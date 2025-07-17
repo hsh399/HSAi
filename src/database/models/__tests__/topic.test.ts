@@ -1,13 +1,13 @@
 import { eq, inArray } from 'drizzle-orm/expressions';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 
 import { messages, sessions, topics, users } from '../../schemas';
 import { CreateTopicParams, TopicModel } from '../topic';
 import { getTestDB } from './_util';
 
-const serverDB: LobeChatDatabase = await getTestDB();
+const serverDB: deepnovaDatabase = await getTestDB();
 
 const userId = 'topic-user-test';
 const sessionId = 'topic-session';

@@ -7,7 +7,7 @@ import {
   MoveLocalFilesParams,
   RenameLocalFileParams,
   WriteLocalFileParams,
-} from '@lobechat/electron-client-ipc';
+} from '@deepnova/electron-client-ipc';
 import { StateCreator } from 'zustand/vanilla';
 
 import { localFileService } from '@/services/electron/localFileService';

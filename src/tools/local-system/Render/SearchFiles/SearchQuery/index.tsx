@@ -1,4 +1,4 @@
-import { LocalSearchFilesParams } from '@lobechat/electron-client-ipc';
+import { LocalSearchFilesParams } from '@deepnova/electron-client-ipc';
 import { ActionIcon, Button, Icon, SearchBar } from '@lobehub/ui';
 import { SearchIcon, XIcon } from 'lucide-react';
 import { memo, useState } from 'react';

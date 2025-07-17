@@ -22,7 +22,7 @@ const oauth = {
     scope: {
       'email': '访问您的电子邮件地址',
       'offline_access': '允许客户端访问您的数据',
-      'openid': '使用您的 LobeChat 账户进行身份验证',
+      'openid': '使用您的 deepnova 账户进行身份验证',
       'profile': '访问您的基本资料信息（名称、头像等）',
       'sync-read': '读取您的同步数据',
       'sync-write': '写入并更新您的同步数据',
@@ -31,7 +31,7 @@ const oauth = {
   },
   failed: {
     backToHome: '返回首页',
-    subTitle: '您已拒绝授权应用访问您的 LobeChat 账户',
+    subTitle: '您已拒绝授权应用访问您的 deepnova 账户',
     title: '授权被拒绝',
   },
   handoff: {
@@ -51,7 +51,7 @@ const oauth = {
     userWelcome: '欢迎回来，',
   },
   success: {
-    subTitle: '您已成功授权应用访问您的 LobeChat 账户，可以关闭该页面了',
+    subTitle: '您已成功授权应用访问您的 deepnova 账户，可以关闭该页面了',
     title: '授权成功',
   },
 };

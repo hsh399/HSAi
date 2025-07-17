@@ -1,12 +1,12 @@
 import { SessionModel } from '@/database/models/session';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { getServerDefaultAgentConfig } from '@/server/globalConfig';
 
 export class AgentService {
   private readonly userId: string;
-  private readonly db: LobeChatDatabase;
+  private readonly db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

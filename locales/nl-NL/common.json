@@ -31,7 +31,7 @@
   "batchDelete": "Batch verwijderen",
   "blog": "Product Blog",
   "branching": "Subonderwerp aanmaken",
-  "branchingDisable": "De functie 'Subonderwerp' is alleen beschikbaar in de serverversie. Als je deze functie wilt gebruiken, schakel dan over naar de serverimplementatiemodus of gebruik LobeChat Cloud.",
+  "branchingDisable": "De functie 'Subonderwerp' is alleen beschikbaar in de serverversie. Als je deze functie wilt gebruiken, schakel dan over naar de serverimplementatiemodus of gebruik deepnova Cloud.",
   "cancel": "Annuleren",
   "changelog": "Wijzigingslogboek",
   "clientDB": {
@@ -170,7 +170,7 @@
     "and": "en",
     "feedback": {
       "action": "Feedback delen",
-      "desc": "Elk van uw ideeën en suggesties is van onschatbare waarde. We horen graag uw mening! Neem gerust contact met ons op voor feedback over productfuncties en gebruikerservaring om LobeChat te helpen verbeteren.",
+      "desc": "Elk van uw ideeën en suggesties is van onschatbare waarde. We horen graag uw mening! Neem gerust contact met ons op voor feedback over productfuncties en gebruikerservaring om deepnova te helpen verbeteren.",
       "title": "Deel uw waardevolle feedback op GitHub"
     },
     "later": "Later",
@@ -335,9 +335,9 @@
   "telemetry": {
     "allow": "Toestaan",
     "deny": "Weigeren",
-    "desc": "We willen graag anonieme gebruiksgegevens verzamelen om LobeChat te verbeteren en een betere productervaring te bieden. Je kunt dit op elk moment uitschakelen in 'Instellingen' - 'Over'.",
+    "desc": "We willen graag anonieme gebruiksgegevens verzamelen om deepnova te verbeteren en een betere productervaring te bieden. Je kunt dit op elk moment uitschakelen in 'Instellingen' - 'Over'.",
     "learnMore": "Meer informatie",
-    "title": "Help LobeChat verbeteren"
+    "title": "Help deepnova verbeteren"
   },
   "temp": "tijdelijk",
   "terms": "algemene voorwaarden",

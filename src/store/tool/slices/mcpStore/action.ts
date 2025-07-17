@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { PluginItem, PluginListResponse } from '@lobehub/market-sdk';
 import { TRPCClientError } from '@trpc/client';
 import { produce } from 'immer';
@@ -213,7 +213,7 @@ export const createMCPPluginStoreSlice: StateCreator<
         return;
       }
 
-      let manifest: LobeChatPluginManifest | undefined;
+      let manifest: deepnovaPluginManifest | undefined;
 
       if (connection?.type === 'stdio') {
         manifest = await mcpService.getStdioMcpServerManifest(

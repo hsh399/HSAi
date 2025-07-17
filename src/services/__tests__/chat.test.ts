@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { act } from '@testing-library/react';
 import { merge } from 'lodash-es';
 import OpenAI from 'openai';
@@ -89,7 +89,7 @@ describe('ChatService', () => {
                 identifier: 'plugin1',
                 api: [{ name: 'api1' }],
                 type: 'default',
-              } as LobeChatPluginManifest,
+              } as deepnovaPluginManifest,
               type: 'plugin',
             },
             {
@@ -98,7 +98,7 @@ describe('ChatService', () => {
                 identifier: 'plugin2',
                 api: [{ name: 'api2' }],
                 type: 'standalone',
-              } as LobeChatPluginManifest,
+              } as deepnovaPluginManifest,
               type: 'plugin',
             },
           ],
@@ -798,7 +798,7 @@ describe('ChatService', () => {
             {
               function: {
                 arguments:
-                  '{"query":"LobeChat","searchEngines":["brave","google","duckduckgo","qwant"]}',
+                  '{"query":"deepnova","searchEngines":["brave","google","duckduckgo","qwant"]}',
                 name: 'lobe-web-browsing____searchWithSearXNG____builtin',
               },
               id: 'call_6xCmrOtFOyBAcqpqO1TGfw2B',
@@ -807,7 +807,7 @@ describe('ChatService', () => {
             {
               function: {
                 arguments:
-                  '{"query":"LobeChat","searchEngines":["brave","google","duckduckgo","qwant"]}',
+                  '{"query":"deepnova","searchEngines":["brave","google","duckduckgo","qwant"]}',
                 name: 'lobe-web-browsing____searchWithSearXNG____builtin',
               },
               id: 'tool_call_nXxXHW8Z',
@@ -856,7 +856,7 @@ describe('ChatService', () => {
             {
               function: {
                 arguments:
-                  '{"query":"LobeChat","searchEngines":["brave","google","duckduckgo","qwant"]}',
+                  '{"query":"deepnova","searchEngines":["brave","google","duckduckgo","qwant"]}',
                 name: 'lobe-web-browsing____searchWithSearXNG____builtin',
               },
               id: 'call_6xCmrOtFOyBAcqpqO1TGfw2B',
@@ -865,7 +865,7 @@ describe('ChatService', () => {
             {
               function: {
                 arguments:
-                  '{"query":"LobeChat","searchEngines":["brave","google","duckduckgo","qwant"]}',
+                  '{"query":"deepnova","searchEngines":["brave","google","duckduckgo","qwant"]}',
                 name: 'lobe-web-browsing____searchWithSearXNG____builtin',
               },
               id: 'tool_call_nXxXHW8Z',

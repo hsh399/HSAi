@@ -1,4 +1,4 @@
-import { ListLocalFileParams } from '@lobechat/electron-client-ipc';
+import { ListLocalFileParams } from '@deepnova/electron-client-ipc';
 import React, { memo } from 'react';
 
 import { LocalFolder } from '@/features/LocalFile';

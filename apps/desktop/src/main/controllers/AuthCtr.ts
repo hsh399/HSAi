@@ -1,4 +1,4 @@
-import { DataSyncConfig } from '@lobechat/electron-client-ipc';
+import { DataSyncConfig } from '@deepnova/electron-client-ipc';
 import { BrowserWindow, app, shell } from 'electron';
 import crypto from 'node:crypto';
 import querystring from 'node:querystring';

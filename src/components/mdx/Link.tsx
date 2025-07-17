@@ -7,7 +7,7 @@ const EXTERNAL_HREF_REGEX = /https?:\/\//;
 
 const A: FC<LinkProps> = ({ href = '', ...props }) => {
   const isOutbound = EXTERNAL_HREF_REGEX.test(href as string);
-  const isOfficial = String(href).includes('lobechat') || String(href).includes('lobehub');
+  const isOfficial = String(href).includes('deepnova') || String(href).includes('lobehub');
   return (
     <Link
       href={href}

@@ -1,4 +1,4 @@
-import { ProgressInfo, UpdateInfo, useWatchBroadcast } from '@lobechat/electron-client-ipc';
+import { ProgressInfo, UpdateInfo, useWatchBroadcast } from '@deepnova/electron-client-ipc';
 import { Button } from '@lobehub/ui';
 import { App, Modal, Progress, Spin } from 'antd';
 import React, { memo, useState } from 'react';

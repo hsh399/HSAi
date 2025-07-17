@@ -3,11 +3,11 @@ description: i18n workflow and troubleshooting
 globs: 
 alwaysApply: false
 ---
-# LobeChat 国际化指南
+# deepnova 国际化指南
 
 ## 架构概览
 
-LobeChat 使用 react-i18next 进行国际化，采用良好的命名空间架构：
+deepnova 使用 react-i18next 进行国际化，采用良好的命名空间架构：
 
 - 默认语言：中文（zh-CN），作为源语言
 - 支持语言：18 种语言，包括英语、日语、韩语、阿拉伯语等

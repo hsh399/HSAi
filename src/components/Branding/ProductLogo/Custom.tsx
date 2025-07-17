@@ -1,5 +1,5 @@
 import type { IconType } from '@lobehub/icons';
-import type { LobeChatProps } from '@lobehub/ui/brand';
+import type { deepnovaProps } from '@lobehub/ui/brand';
 import { createStyles, useTheme } from 'antd-style';
 import Image, { ImageProps } from 'next/image';
 import { ReactNode, forwardRef, memo } from 'react';
@@ -66,7 +66,7 @@ const Divider: IconType = forwardRef(({ size = '1em', style, ...rest }, ref) => 
   </svg>
 ));
 
-const CustomLogo = memo<LobeChatProps>(({ extra, size = 32, className, style, type, ...rest }) => {
+const CustomLogo = memo<deepnovaProps>(({ extra, size = 32, className, style, type, ...rest }) => {
   const theme = useTheme();
   const { styles } = useStyles();
   let logoComponent: ReactNode;

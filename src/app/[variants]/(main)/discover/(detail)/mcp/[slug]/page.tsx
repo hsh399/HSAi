@@ -42,7 +42,7 @@ export const generateMetadata = async (props: DiscoverPageProps) => {
     authors: [
       { name: author, url: homepage },
       { name: 'LobeHub', url: 'https://github.com/lobehub' },
-      { name: 'LobeChat', url: 'https://github.com/lobehub/lobe-chat' },
+      { name: 'deepnova', url: 'https://github.com/lobehub/lobe-chat' },
     ],
     keywords: tags,
     ...metadataModule.generate({

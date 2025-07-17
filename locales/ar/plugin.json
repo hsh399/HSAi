@@ -218,7 +218,7 @@
       "edit": "تحرير برنامج مساعد مخصص"
     },
     "type": {
-      "lobe": "برنامج مساعد LobeChat",
+      "lobe": "برنامج مساعد deepnova",
       "openai": "برنامج مساعد OpenAI"
     },
     "update": "تحديث",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "مثبتة",
       "mcp": "إضافة MCP",
-      "old": "إضافة LobeChat"
+      "old": "إضافة deepnova"
     },
     "title": "متجر الإضافات"
   },

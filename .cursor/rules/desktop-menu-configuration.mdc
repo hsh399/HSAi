@@ -7,7 +7,7 @@ alwaysApply: false
 
 ## 菜单系统概述
 
-LobeChat 桌面应用有三种主要的菜单类型：
+deepnova 桌面应用有三种主要的菜单类型：
 
 1. **应用菜单 (App Menu)**：显示在应用窗口顶部（macOS）或窗口标题栏（Windows/Linux）
 2. **上下文菜单 (Context Menu)**：右键点击时显示的菜单

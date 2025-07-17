@@ -8,7 +8,7 @@ services:
       - '9001:9001' # MinIO Console
       - '${LOGTO_PORT}:${LOGTO_PORT}' # Logto
       - '3002:3002' # Logto Admin
-      - '${LOBE_PORT}:3210' # LobeChat
+      - '${LOBE_PORT}:3210' # deepnova
     command: tail -f /dev/null
     networks:
       - lobe-network

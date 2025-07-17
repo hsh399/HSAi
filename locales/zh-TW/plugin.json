@@ -218,7 +218,7 @@
       "edit": "編輯自訂插件"
     },
     "type": {
-      "lobe": "LobeChat 插件",
+      "lobe": "deepnova 插件",
       "openai": "OpenAI 插件"
     },
     "update": "更新",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "已安裝",
       "mcp": "MCP 外掛",
-      "old": "LobeChat 插件"
+      "old": "deepnova 插件"
     },
     "title": "插件商店"
   },

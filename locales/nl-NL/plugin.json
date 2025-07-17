@@ -218,7 +218,7 @@
       "edit": "Aangepaste plug-in bewerken"
     },
     "type": {
-      "lobe": "LobeChat-plug-in",
+      "lobe": "deepnova-plug-in",
       "openai": "OpenAI-plug-in"
     },
     "update": "Bijwerken",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "Geïnstalleerd",
       "mcp": "MCP-plug-in",
-      "old": "LobeChat-plugin"
+      "old": "deepnova-plugin"
     },
     "title": "Pluginwinkel"
   },

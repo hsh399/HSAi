@@ -1,15 +1,15 @@
 import { count } from 'drizzle-orm';
 import { and, eq } from 'drizzle-orm/expressions';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 
 import { NewEmbeddingsItem, embeddings } from '../schemas';
 
 export class EmbeddingModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

@@ -101,7 +101,7 @@
       "desc1": "Ga naar de instellingenpagina van de assistent die je wilt indienen via de instellingen in de rechterbovenhoek van het gespreksscherm;",
       "desc2": "Klik op de knop 'Indienen naar assistentmarkt' in de rechterbovenhoek.",
       "tag": "Methode één",
-      "title": "Indienen via LobeChat"
+      "title": "Indienen via deepnova"
     },
     "func2": {
       "button": "Ga naar de Github assistent repository",
@@ -254,7 +254,7 @@
             "claude": "- Open de **Claude Desktop** applicatie\n- Ga naar **Instellingen** en kies **Ontwikkelaar**\n- Klik op **Configuratie bewerken**\n- Open het bestand **claude_desktop_config.json**\n- Kopieer en plak de serverconfiguratie in het bestaande bestand en sla op",
             "cline": "- Open VS Code met de Cline-extensie geïnstalleerd\n- Klik op het Cline-icoon in de zijbalk\n- Selecteer **MCP Servers** in het dropdownmenu\n- Voer de servernaam en jouw MCP-server URL in onder het tabblad **Remote Servers**\n- Klik op **Add Server** om te verbinden",
             "cursor": "- Navigeer naar **Instellingen** en kies Cursor-instellingen\n- Selecteer aan de linkerkant **MCP**\n- Klik rechtsboven op **Nieuwe globale MCP-server toevoegen**\n- Kopieer en plak de serverconfiguratie in het bestaande bestand en sla op",
-            "lobeChat": "- Open de **LobeChat desktop** applicatie\n- Ga naar **Instellingen** - **Standaard assistent**\n- Kies vervolgens **Plugin instellingen** - **Aangepaste plugins**\n- Klik op **Snelle import JSON-configuratie**\n- Kopieer en plak de serverconfiguratie in het tekstvak en installeer",
+            "deepnova": "- Open de **deepnova desktop** applicatie\n- Ga naar **Instellingen** - **Standaard assistent**\n- Kies vervolgens **Plugin instellingen** - **Aangepaste plugins**\n- Klik op **Snelle import JSON-configuratie**\n- Kopieer en plak de serverconfiguratie in het tekstvak en installeer",
             "openai": "- Open je **OpenAI-app** of ontwikkelomgeving\n- Configureer MCP-tools in de **Responses API**\n- Voeg een MCP-blok toe aan de **tools** array in de API-aanvraag\n- Stel **server_url** in op jouw MCP-server endpoint\n- Voeg de benodigde authenticatieheaders toe (API-sleutel, token, etc.)\n- Gebruik de parameter `allowed_tools` om blootgestelde tools te beperken\n- Stel `require_approval` in om goedkeuring voor tooluitvoering te regelen",
             "vscode": "- Open VS Code\n- Open het commandopalet (`Ctrl+Shift+P` / `Cmd+Shift+P`)\n- Typ **MCP: Add Server** en selecteer het\n- Kies toevoegen aan werkruimte of gebruikersinstellingen\n- Kopieer en plak de serverconfiguratie"
           },
@@ -545,7 +545,7 @@
       "type": "Type"
     },
     "providerInfo": {
-      "apiTooltip": "LobeChat ondersteunt het gebruik van een aangepaste API-sleutel voor deze provider.",
+      "apiTooltip": "deepnova ondersteunt het gebruik van een aangepaste API-sleutel voor deze provider.",
       "input": "Invoerkosten",
       "inputTooltip": "Kosten per miljoen tokens",
       "latency": "Latentie",

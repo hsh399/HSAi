@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { LobeTool } from '@/types/tool';
 import { LobeToolCustomPlugin } from '@/types/tool/plugin';
@@ -6,7 +6,7 @@ import { LobeToolCustomPlugin } from '@/types/tool/plugin';
 export interface InstallPluginParams {
   customParams?: Record<string, any>;
   identifier: string;
-  manifest: LobeChatPluginManifest;
+  manifest: deepnovaPluginManifest;
   settings?: Record<string, any>;
   type: 'plugin' | 'customPlugin';
 }
@@ -18,6 +18,6 @@ export interface IPluginService {
   removeAllPlugins: () => Promise<void>;
   uninstallPlugin: (identifier: string) => Promise<void>;
   updatePlugin: (id: string, value: Partial<LobeToolCustomPlugin>) => Promise<void>;
-  updatePluginManifest: (id: string, manifest: LobeChatPluginManifest) => Promise<void>;
+  updatePluginManifest: (id: string, manifest: deepnovaPluginManifest) => Promise<void>;
   updatePluginSettings: (id: string, settings: any, signal?: AbortSignal) => Promise<void>;
 }

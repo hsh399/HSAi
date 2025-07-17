@@ -1,6 +1,6 @@
 import { and, desc, eq } from 'drizzle-orm/expressions';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { CreateThreadParams, ThreadStatus } from '@/types/topic';
 
 import { ThreadItem, threads } from '../schemas';
@@ -19,9 +19,9 @@ const queryColumns = {
 
 export class ThreadModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

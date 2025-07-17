@@ -51,7 +51,7 @@ alwaysApply: false
         *   导入在步骤 2 中定义的 IPC 参数类型。
         *   添加一个新的 `async` 方法，方法名通常与 Action 名称对应 (例如: `renameLocalFile`)。
         *   方法接收 `params` (符合 IPC 参数类型)。
-        *   使用从 `@lobechat/electron-client-ipc` 导入的 `dispatch` (或 `invoke`) 函数，调用与 Manifest 中 `name` 字段匹配的 IPC 事件名称，并将 `params` 传递过去。
+        *   使用从 `@deepnova/electron-client-ipc` 导入的 `dispatch` (或 `invoke`) 函数，调用与 Manifest 中 `name` 字段匹配的 IPC 事件名称，并将 `params` 传递过去。
         *   定义方法的返回类型，通常是 `Promise<{ success: boolean; error?: string }>`，与后端 Controller 返回的结构一致。
 
 5.  **实现后端逻辑 (Controller / IPC Handler):**
@@ -77,4 +77,4 @@ alwaysApply: false
         *   如有必要，更新 `<security_considerations>`。
         *   如有必要（例如工具返回了新的数据结构或路径），更新 `<response_format>` 中的示例。
 
-通过遵循这些步骤，可以系统地将新的桌面端工具集成到 LobeChat 的插件系统中。
+通过遵循这些步骤，可以系统地将新的桌面端工具集成到 deepnova 的插件系统中。

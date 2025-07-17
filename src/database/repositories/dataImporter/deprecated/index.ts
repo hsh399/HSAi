@@ -11,21 +11,21 @@ import {
   sessions,
   topics,
 } from '@/database/schemas';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { ImportResult } from '@/services/import/_deprecated';
 import { ImporterEntryData } from '@/types/importer';
 import { sanitizeUTF8 } from '@/utils/sanitizeUTF8';
 
 export class DeprecatedDataImporterRepos {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
   /**
    * The version of the importer that this module supports
    */
   supportVersion = 7;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }

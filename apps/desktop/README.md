@@ -1,6 +1,6 @@
 # LobeHub Desktop Application
 
-LobeHub Desktop 是 [LobeChat](https://github.com/lobehub/lobe-chat) 的跨平台桌面应用程序，使用 Electron 构建，提供了更加原生的桌面体验和功能。
+LobeHub Desktop 是 [deepnova](https://github.com/lobehub/lobe-chat) 的跨平台桌面应用程序，使用 Electron 构建，提供了更加原生的桌面体验和功能。
 
 ## 功能特点
 

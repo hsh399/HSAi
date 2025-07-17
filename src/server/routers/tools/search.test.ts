@@ -13,7 +13,7 @@ vi.mock('@/utils/server/jwt', () => ({
   getJWTPayload: vi.fn().mockResolvedValue({ userId: '1' }),
 }));
 
-vi.mock('@lobechat/web-crawler', () => ({
+vi.mock('@deepnova/web-crawler', () => ({
   Crawler: vi.fn().mockImplementation(() => ({
     crawl: vi.fn().mockResolvedValue({ content: 'test content' }),
   })),

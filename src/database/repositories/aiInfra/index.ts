@@ -4,7 +4,7 @@ import pMap from 'p-map';
 import { DEFAULT_MODEL_PROVIDER_LIST } from '@/config/modelProviders';
 import { AiModelModel } from '@/database/models/aiModel';
 import { AiProviderModel } from '@/database/models/aiProvider';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import {
   AIChatModelCard,
   AiModelSourceEnum,
@@ -24,13 +24,13 @@ type DecryptUserKeyVaults = (encryptKeyVaultsStr: string | null) => Promise<any>
 
 export class AiInfraRepos {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
   aiProviderModel: AiProviderModel;
   private readonly providerConfigs: Record<string, ProviderConfig>;
   aiModelModel: AiModelModel;
 
   constructor(
-    db: LobeChatDatabase,
+    db: deepnovaDatabase,
     userId: string,
     providerConfigs: Record<string, ProviderConfig>,
   ) {

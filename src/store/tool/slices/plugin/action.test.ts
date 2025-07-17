@@ -1,4 +1,4 @@
-import { LobeChatPluginMeta } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginMeta } from '@lobehub/chat-plugin-sdk';
 import { act, renderHook } from '@testing-library/react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 

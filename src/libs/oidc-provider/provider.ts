@@ -4,7 +4,7 @@ import urlJoin from 'url-join';
 
 import { serverDBEnv } from '@/config/db';
 import { UserModel } from '@/database/models/user';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { appEnv } from '@/envs/app';
 import { oidcEnv } from '@/envs/oidc';
 
@@ -65,7 +65,7 @@ const getCookieKeys = () => {
  * @param db - 数据库实例
  * @returns 配置好的 OIDC Provider 实例
  */
-export const createOIDCProvider = async (db: LobeChatDatabase): Promise<Provider> => {
+export const createOIDCProvider = async (db: deepnovaDatabase): Promise<Provider> => {
   // 获取 JWKS
   const jwks = getJWKS();
 

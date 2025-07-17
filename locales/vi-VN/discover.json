@@ -101,7 +101,7 @@
       "desc1": "Vào trang cài đặt của trợ lý bạn muốn gửi thông qua biểu tượng cài đặt ở góc trên bên phải trong cửa sổ trò chuyện;",
       "desc2": "Nhấn nút gửi đến thị trường trợ lý ở góc trên bên phải.",
       "tag": "Phương pháp một",
-      "title": "Gửi qua LobeChat"
+      "title": "Gửi qua deepnova"
     },
     "func2": {
       "button": "Đi đến kho trợ lý trên Github",
@@ -254,7 +254,7 @@
             "claude": "- Mở ứng dụng **Claude Desktop**\n- Vào **Cài đặt**, chọn **Nhà phát triển**\n- Nhấn **Chỉnh sửa cấu hình**\n- Mở file **claude_desktop_config.json**\n- Sao chép và dán cấu hình máy chủ vào file hiện có, sau đó lưu lại",
             "cline": "- Mở VS Code đã cài tiện ích mở rộng Cline\n- Nhấn biểu tượng Cline ở thanh bên\n- Chọn **MCP Servers** từ menu thả xuống\n- Trong tab **Remote Servers**, nhập tên máy chủ và URL MCP Server của bạn\n- Nhấn **Add Server** để kết nối",
             "cursor": "- Vào **Cài đặt**, chọn phần cài đặt Cursor\n- Chọn **MCP** ở bên trái\n- Nhấn **Thêm MCP Server toàn cục mới** ở góc trên bên phải\n- Sao chép và dán cấu hình máy chủ vào file hiện có, sau đó lưu lại",
-            "lobeChat": "- Mở ứng dụng **LobeChat Desktop**\n- Vào **Cài đặt** - **Trợ lý mặc định**\n- Chọn **Cài đặt plugin** - **Plugin tùy chỉnh**\n- Nhấn **Nhập nhanh cấu hình JSON**\n- Sao chép và dán cấu hình máy chủ vào ô văn bản, sau đó cài đặt",
+            "deepnova": "- Mở ứng dụng **deepnova Desktop**\n- Vào **Cài đặt** - **Trợ lý mặc định**\n- Chọn **Cài đặt plugin** - **Plugin tùy chỉnh**\n- Nhấn **Nhập nhanh cấu hình JSON**\n- Sao chép và dán cấu hình máy chủ vào ô văn bản, sau đó cài đặt",
             "openai": "- Mở ứng dụng hoặc môi trường phát triển **OpenAI** của bạn\n- Cấu hình MCP tool trong **Responses API**\n- Thêm khối MCP vào mảng **tools** trong yêu cầu API\n- Đặt **server_url** thành điểm cuối MCP Server của bạn\n- Bao gồm các header xác thực cần thiết (API key, token, v.v.)\n- Sử dụng tham số `allowed_tools` để giới hạn công cụ được phơi bày\n- Đặt `require_approval` để kiểm soát phê duyệt thực thi công cụ",
             "vscode": "- Mở VS Code\n- Mở bảng lệnh (Ctrl+Shift+P / Cmd+Shift+P)\n- Gõ **MCP: Add Server** và chọn\n- Chọn thêm vào workspace hoặc cài đặt người dùng\n- Sao chép và dán cấu hình máy chủ"
           },
@@ -545,7 +545,7 @@
       "type": "Loại"
     },
     "providerInfo": {
-      "apiTooltip": "LobeChat hỗ trợ sử dụng khóa API tùy chỉnh cho nhà cung cấp này.",
+      "apiTooltip": "deepnova hỗ trợ sử dụng khóa API tùy chỉnh cho nhà cung cấp này.",
       "input": "Giá đầu vào",
       "inputTooltip": "Chi phí cho mỗi triệu Token",
       "latency": "Độ trễ",

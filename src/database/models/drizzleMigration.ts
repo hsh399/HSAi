@@ -1,12 +1,12 @@
 import { sql } from 'drizzle-orm';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { MigrationTableItem } from '@/types/clientDB';
 
 export class DrizzleMigrationModel {
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase) {
+  constructor(db: deepnovaDatabase) {
     this.db = db;
   }
 

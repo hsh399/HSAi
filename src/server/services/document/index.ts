@@ -1,9 +1,9 @@
-import { loadFile } from '@lobechat/file-loaders';
+import { loadFile } from '@deepnova/file-loaders';
 import debug from 'debug';
 
 import { DocumentModel } from '@/database/models/document';
 import { FileModel } from '@/database/models/file';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { LobeDocument } from '@/types/document';
 
 import { FileService } from '../file';
@@ -16,7 +16,7 @@ export class DocumentService {
   private documentModel: DocumentModel;
   private fileService: FileService;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.fileModel = new FileModel(db, userId);
     this.fileService = new FileService(db, userId);

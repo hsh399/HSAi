@@ -1,10 +1,10 @@
 ---
-title: Deploy LobeChat with database on Dokploy
+title: Deploy deepnova with database on Dokploy
 description: >-
-  Learn how to deploy LobeChat with database on Dokploy with ease, including: database, authentication and S3 storage service.
+  Learn how to deploy deepnova with database on Dokploy with ease, including: database, authentication and S3 storage service.
 
 tags:
-  - Deploy LobeChat
+  - Deploy deepnova
   - Vercel Deployment
   - OpenAI API Key
   - Custom Domain Binding
@@ -12,7 +12,7 @@ tags:
 
 # Deploying Server Database Version on Dokploy.
 
-This article will detail how to deploy the server database version of LobeChat.
+This article will detail how to deploy the server database version of deepnova.
 
 ## 1. Preparation Work
 
@@ -59,7 +59,7 @@ Enter the previously created Project, click on Create Service, and select Databa
 
 ![](https://github.com/user-attachments/assets/97899819-278f-42fd-804a-144d521d4b4f)
 
-Enter the created database and set an unused port in External Credentials to allow external access; otherwise, LobeChat will not be able to connect to the database. You can view the Postgres database connection URL in External Host, as shown below:
+Enter the created database and set an unused port in External Credentials to allow external access; otherwise, deepnova will not be able to connect to the database. You can view the Postgres database connection URL in External Host, as shown below:
 
 ```shell
 postgresql://postgres:wAbLxfXSwkxxxxxx@45.577.281.48:5432/postgres
@@ -69,13 +69,13 @@ Finally, click Deploy to deploy the database.
 
 ![](https://github.com/user-attachments/assets/b4e89dd4-877b-43fe-aa42-4680de17ba8e)
 
-## Deploy LobeChat on Dokploy.
+## Deploy deepnova on Dokploy.
 
-Click "Create Service", select "Application", and create the LobeChat application.
+Click "Create Service", select "Application", and create the deepnova application.
 
 ![](https://github.com/user-attachments/assets/4cbbbcce-36be-48ff-bb0b-31607a0bba5c)
 
-Enter the created LobeChat application, select the forked lobe-chat project and branch, and click Save to save.
+Enter the created deepnova application, select the forked lobe-chat project and branch, and click Save to save.
 
 ![](https://github.com/user-attachments/assets/2bb4c09d-75bb-4c46-bb2f-faf538308305)
 
@@ -125,12 +125,12 @@ After adding the environment variables and saving, click Deploy to initiate the 
 
 ![](https://github.com/user-attachments/assets/411e2002-61f0-4010-9841-18e88ca895ec)
 
-After a successful deployment, bind your own domain to your LobeChat application and request a certificate on the Domains page.
+After a successful deployment, bind your own domain to your deepnova application and request a certificate on the Domains page.
 
 ![](https://github.com/user-attachments/assets/dd6bc4a4-3c20-4162-87fd-5cac57e5d7e7)
 
-## Check if LobeChat is working properly.
+## Check if deepnova is working properly.
 
-Go to your LobeChat website, and if you click on the login button in the upper left corner and the login pop-up appears normally, it means you have configured it successfully. Enjoy it to the fullest!
+Go to your deepnova website, and if you click on the login button in the upper left corner and the login pop-up appears normally, it means you have configured it successfully. Enjoy it to the fullest!
 
 ![](https://github.com/user-attachments/assets/798ddb18-50c7-462a-a083-0c6841351d26)

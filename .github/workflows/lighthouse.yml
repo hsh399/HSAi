@@ -24,12 +24,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - NAME: 'LobeChat | Chat'
-            URLS: 'https://lobechat.com/chat'
+          - NAME: 'deepnova | Chat'
+            URLS: 'https://deepnova.com/chat'
             BADGES_ARGS: '-b pagespeed -o lighthouse/chat -r'
             COMMIT_MESSAGE: '🤖 chore: Lighthouse Results | Chat'
-          - NAME: 'LobeChat | Market'
-            URLS: 'https://lobechat.com/discover'
+          - NAME: 'deepnova | Market'
+            URLS: 'https://deepnova.com/discover'
             BADGES_ARGS: '-b pagespeed -o lighthouse/discover -r'
             COMMIT_MESSAGE: '🤖 chore: Lighthouse Results | Discover'
 

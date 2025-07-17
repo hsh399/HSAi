@@ -41,7 +41,7 @@
   "remoteServer": {
     "authError": "Xác thực thất bại: {{error}}",
     "authPending": "Vui lòng hoàn tất xác thực trong trình duyệt",
-    "configDesc": "Kết nối đến máy chủ LobeChat từ xa, kích hoạt đồng bộ dữ liệu",
+    "configDesc": "Kết nối đến máy chủ deepnova từ xa, kích hoạt đồng bộ dữ liệu",
     "configError": "Lỗi cấu hình",
     "configTitle": "Cấu hình đồng bộ đám mây",
     "connect": "Kết nối và xác thực",

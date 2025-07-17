@@ -21,7 +21,7 @@
     "scope": {
       "email": "E-posta adresinize erişim",
       "offline_access": "Müşterinin verilerinize erişmesine izin ver",
-      "openid": "LobeChat hesabınızla kimlik doğrulama",
+      "openid": "deepnova hesabınızla kimlik doğrulama",
       "profile": "Temel profil bilgilerinize (isim, avatar vb.) erişim",
       "sync-read": "Senkronize verilerinizi okumak",
       "sync-write": "Senkronize verilerinizi yazmak ve güncellemek"
@@ -30,7 +30,7 @@
   },
   "failed": {
     "backToHome": "Ana sayfaya dön",
-    "subTitle": "Uygulamaya LobeChat hesabınıza erişim izni vermeyi reddettiniz",
+    "subTitle": "Uygulamaya deepnova hesabınıza erişim izni vermeyi reddettiniz",
     "title": "Yetkilendirme reddedildi"
   },
   "handoff": {
@@ -50,7 +50,7 @@
     "userWelcome": "Hoş geldiniz, "
   },
   "success": {
-    "subTitle": "Uygulamaya LobeChat hesabınıza erişim izni verdiniz, bu sayfayı kapatabilirsiniz",
+    "subTitle": "Uygulamaya deepnova hesabınıza erişim izni verdiniz, bu sayfayı kapatabilirsiniz",
     "title": "Yetkilendirme başarılı"
   }
 }

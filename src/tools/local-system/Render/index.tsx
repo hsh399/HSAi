@@ -1,4 +1,4 @@
-import { LocalFileItem } from '@lobechat/electron-client-ipc';
+import { LocalFileItem } from '@deepnova/electron-client-ipc';
 import { memo } from 'react';
 
 import { LocalSystemApiName } from '@/tools/local-system';

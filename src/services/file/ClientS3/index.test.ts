@@ -25,7 +25,7 @@ beforeEach(() => {
 describe('BrowserS3Storage', () => {
   describe('constructor', () => {
     it('should create store when in browser environment', () => {
-      expect(createStore).toHaveBeenCalledWith('lobechat-local-s3', 'objects');
+      expect(createStore).toHaveBeenCalledWith('deepnova-local-s3', 'objects');
     });
   });
 

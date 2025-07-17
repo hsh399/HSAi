@@ -4,7 +4,7 @@ import { eq } from 'drizzle-orm/expressions';
 import type { AdapterAccount } from 'next-auth/adapters';
 import type { PartialDeep } from 'type-fest';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { UserGuide, UserPreference } from '@/types/user';
 import { UserKeyVaults, UserSettings } from '@/types/user/settings';
 import { merge } from '@/utils/merge';
@@ -32,9 +32,9 @@ export class UserNotFoundError extends TRPCError {
 
 export class UserModel {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
   }
@@ -189,11 +189,11 @@ export class UserModel {
   };
 
   // Static method
-  static makeSureUserExist = async (db: LobeChatDatabase, userId: string) => {
+  static makeSureUserExist = async (db: deepnovaDatabase, userId: string) => {
     await db.insert(users).values({ id: userId }).onConflictDoNothing();
   };
 
-  static createUser = async (db: LobeChatDatabase, params: NewUser) => {
+  static createUser = async (db: deepnovaDatabase, params: NewUser) => {
     // if user already exists, skip creation
     if (params.id) {
       const user = await db.query.users.findFirst({ where: eq(users.id, params.id) });
@@ -208,20 +208,20 @@ export class UserModel {
     return { duplicate: false, user };
   };
 
-  static deleteUser = async (db: LobeChatDatabase, id: string) => {
+  static deleteUser = async (db: deepnovaDatabase, id: string) => {
     return db.delete(users).where(eq(users.id, id));
   };
 
-  static findById = async (db: LobeChatDatabase, id: string) => {
+  static findById = async (db: deepnovaDatabase, id: string) => {
     return db.query.users.findFirst({ where: eq(users.id, id) });
   };
 
-  static findByEmail = async (db: LobeChatDatabase, email: string) => {
+  static findByEmail = async (db: deepnovaDatabase, email: string) => {
     return db.query.users.findFirst({ where: eq(users.email, email) });
   };
 
   static getUserApiKeys = async (
-    db: LobeChatDatabase,
+    db: deepnovaDatabase,
     id: string,
     decryptor: DecryptUserKeyVaults,
   ) => {

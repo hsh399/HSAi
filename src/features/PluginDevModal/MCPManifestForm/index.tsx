@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 import { Alert, FormItem, Input, InputPassword } from '@lobehub/ui';
 import { Button, Divider, Form, FormInstance, Radio } from 'antd';
 import { useState } from 'react';
@@ -80,7 +80,7 @@ const MCPManifestForm = ({ form, isEditMode }: MCPManifestFormProps) => {
       const description = values.customParams?.description;
       const avatar = values.customParams?.avatar;
 
-      let data: LobeChatPluginManifest;
+      let data: deepnovaPluginManifest;
 
       if (mcp.type === 'http') {
         if (!mcp.url) throw new Error(t('dev.mcp.url.required'));

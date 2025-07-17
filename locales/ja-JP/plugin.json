@@ -218,7 +218,7 @@
       "edit": "カスタムプラグインを編集"
     },
     "type": {
-      "lobe": "LobeChatプラグイン",
+      "lobe": "deepnovaプラグイン",
       "openai": "OpenAIプラグイン"
     },
     "update": "更新",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "インストール済み",
       "mcp": "MCPプラグイン",
-      "old": "LobeChatプラグイン"
+      "old": "deepnovaプラグイン"
     },
     "title": "プラグインストア"
   },

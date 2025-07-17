@@ -21,7 +21,7 @@
     "scope": {
       "email": "Toegang tot uw e-mailadres",
       "offline_access": "Toestaan dat de client toegang heeft tot uw gegevens",
-      "openid": "Authenticatie met uw LobeChat-account",
+      "openid": "Authenticatie met uw deepnova-account",
       "profile": "Toegang tot uw basisprofielinformatie (naam, profielfoto, enz.)",
       "sync-read": "Lees uw gesynchroniseerde gegevens",
       "sync-write": "Schrijf en werk uw gesynchroniseerde gegevens bij"
@@ -30,7 +30,7 @@
   },
   "failed": {
     "backToHome": "Terug naar de startpagina",
-    "subTitle": "U heeft de autorisatie voor de applicatie om toegang te krijgen tot uw LobeChat-account geweigerd",
+    "subTitle": "U heeft de autorisatie voor de applicatie om toegang te krijgen tot uw deepnova-account geweigerd",
     "title": "Autorisatie geweigerd"
   },
   "handoff": {
@@ -50,7 +50,7 @@
     "userWelcome": "Welkom terug, "
   },
   "success": {
-    "subTitle": "U heeft de applicatie succesvol gemachtigd om toegang te krijgen tot uw LobeChat-account, u kunt deze pagina nu sluiten",
+    "subTitle": "U heeft de applicatie succesvol gemachtigd om toegang te krijgen tot uw deepnova-account, u kunt deze pagina nu sluiten",
     "title": "Autorisatie succesvol"
   }
 }

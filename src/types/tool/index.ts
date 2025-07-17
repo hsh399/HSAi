@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest, LobePluginType } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest, LobePluginType } from '@lobehub/chat-plugin-sdk';
 
 import { CustomPluginParams } from './plugin';
 import { LobeToolType } from './tool';
@@ -6,7 +6,7 @@ import { LobeToolType } from './tool';
 export interface LobeTool {
   customParams?: CustomPluginParams | null;
   identifier: string;
-  manifest?: LobeChatPluginManifest | null;
+  manifest?: deepnovaPluginManifest | null;
   /**
    * use for runtime
    */

@@ -218,7 +218,7 @@
       "edit": "Редактировать плагин"
     },
     "type": {
-      "lobe": "Плагин LobeChat",
+      "lobe": "Плагин deepnova",
       "openai": "Плагин OpenAI"
     },
     "update": "Обновить",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "Установленные",
       "mcp": "Плагин MCP",
-      "old": "Плагин LobeChat"
+      "old": "Плагин deepnova"
     },
     "title": "Магазин плагинов"
   },

@@ -2,7 +2,7 @@
 import { eq } from 'drizzle-orm';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { AsyncTaskStatus } from '@/types/asyncTask';
 import { FileSource } from '@/types/files';
 import { ImageGenerationAsset } from '@/types/generation';
@@ -19,7 +19,7 @@ import {
 import { GenerationModel } from '../generation';
 import { getTestDB } from './_util';
 
-const serverDB: LobeChatDatabase = await getTestDB();
+const serverDB: deepnovaDatabase = await getTestDB();
 
 // Mock FileService
 const mockGetFullFileUrl = vi.fn();

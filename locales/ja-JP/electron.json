@@ -41,7 +41,7 @@
   "remoteServer": {
     "authError": "認証エラー: {{error}}",
     "authPending": "ブラウザで認証を完了してください",
-    "configDesc": "リモートLobeChatサーバーに接続し、データ同期を有効にします",
+    "configDesc": "リモートdeepnovaサーバーに接続し、データ同期を有効にします",
     "configError": "設定エラー",
     "configTitle": "クラウド同期の設定",
     "connect": "接続して認証",

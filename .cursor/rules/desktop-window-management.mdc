@@ -7,7 +7,7 @@ alwaysApply: false
 
 ## 窗口管理概述
 
-LobeChat 桌面应用使用 Electron 的 `BrowserWindow` 管理应用窗口。主要的窗口管理功能包括：
+deepnova 桌面应用使用 Electron 的 `BrowserWindow` 管理应用窗口。主要的窗口管理功能包括：
 
 1. **窗口创建和配置**
 2. **窗口状态管理**（大小、位置、最大化等）
@@ -185,7 +185,7 @@ export const createMainWindow = () => {
 2. **在渲染进程中调用**
    ```typescript
    // src/services/electron/windowService.ts
-   import { dispatch } from '@lobechat/electron-client-ipc';
+   import { dispatch } from '@deepnova/electron-client-ipc';
 
    export const windowService = {
      minimize: () => dispatch('minimizeWindow'),

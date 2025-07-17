@@ -3,7 +3,7 @@ import debug from 'debug';
 
 import { serverDBEnv } from '@/config/db';
 import { UserModel } from '@/database/models/user';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 
 import { asyncTrpc } from './init';
 
@@ -23,7 +23,7 @@ export const asyncAuth = asyncTrpc.middleware(async (opts) => {
 
   try {
     log('Looking up user in database: %s', ctx.userId);
-    const result = await UserModel.findById(ctx.serverDB as LobeChatDatabase, ctx.userId);
+    const result = await UserModel.findById(ctx.serverDB as deepnovaDatabase, ctx.userId);
 
     if (!result) {
       log('User not found in database: %s', ctx.userId);

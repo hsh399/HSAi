@@ -7,7 +7,7 @@ import { PROVIDER_LIST, PROVIDER_SPLIT, root } from './const';
 import { genLink, readReadme, updateReadme, writeReadme } from './utlis';
 
 const genProviderTable = (data: { desc?: string; id: string; name: string }) => {
-  const title = genLink(data.name, urlJoin('https://lobechat.com/discover/provider', data.id));
+  const title = genLink(data.name, urlJoin('https://deepnova.com/discover/provider', data.id));
 
   return ['-', `**${title}**:`, data.desc].join(' ');
 };
@@ -37,7 +37,7 @@ const runProviderTable = async (lang?: string) => {
         )
         .join('\n'),
       '</details>',
-      `> 📊 Total providers: ${genLink(`<kbd>**${PROVIDER_LIST.length}**</kbd>`, 'https://lobechat.com/discover/providers')}`,
+      `> 📊 Total providers: ${genLink(`<kbd>**${PROVIDER_LIST.length}**</kbd>`, 'https://deepnova.com/discover/providers')}`,
     ].join('\n\n'),
   );
   writeReadme(newMd, lang);

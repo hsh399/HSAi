@@ -1,4 +1,4 @@
-import { NetworkProxySettings } from '@lobechat/electron-client-ipc';
+import { NetworkProxySettings } from '@deepnova/electron-client-ipc';
 import { fetch, getGlobalDispatcher, setGlobalDispatcher } from 'undici';
 
 import { createLogger } from '@/utils/logger';
@@ -43,7 +43,7 @@ export class ProxyConnectionTester {
 
       const response = await fetch(url, {
         headers: {
-          'User-Agent': 'LobeChat-Desktop/1.0.0',
+          'User-Agent': 'deepnova-Desktop/1.0.0',
         },
         signal: controller.signal,
       });
@@ -116,7 +116,7 @@ export class ProxyConnectionTester {
         const response = await fetch(testUrl, {
           dispatcher: agent,
           headers: {
-            'User-Agent': 'LobeChat-Desktop/1.0.0',
+            'User-Agent': 'deepnova-Desktop/1.0.0',
           },
           signal: controller.signal,
         });

@@ -1,7 +1,7 @@
 import { and, eq, inArray } from 'drizzle-orm/expressions';
 
 import * as EXPORT_TABLES from '@/database/schemas';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 import { ImportPgDataStructure } from '@/types/export';
 import { ImportResultData, ImporterEntryData } from '@/types/importer';
 import { uuid } from '@/utils/uuid';
@@ -257,12 +257,12 @@ const IMPORT_TABLE_CONFIG: TableImportConfig[] = [
 
 export class DataImporterRepos {
   private userId: string;
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
   private deprecatedDataImporterRepos: DeprecatedDataImporterRepos;
   private idMaps: Record<string, Record<string, string>> = {};
   private conflictRecords: Record<string, { field: string; value: any }[]> = {};
 
-  constructor(db: LobeChatDatabase, userId: string) {
+  constructor(db: deepnovaDatabase, userId: string) {
     this.userId = userId;
     this.db = db;
     this.deprecatedDataImporterRepos = new DeprecatedDataImporterRepos(db, userId);

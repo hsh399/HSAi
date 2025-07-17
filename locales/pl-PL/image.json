@@ -72,7 +72,7 @@
     }
   },
   "notSupportGuide": {
-    "desc": "Aktualna instancja wdrożeniowa działa w trybie bazy danych klienta i nie obsługuje funkcji generowania obrazów AI. Proszę przełączyć się na <1>tryb wdrożenia bazy danych serwera</1> lub bezpośrednio skorzystać z <3>LobeChat Cloud</3>",
+    "desc": "Aktualna instancja wdrożeniowa działa w trybie bazy danych klienta i nie obsługuje funkcji generowania obrazów AI. Proszę przełączyć się na <1>tryb wdrożenia bazy danych serwera</1> lub bezpośrednio skorzystać z <3>deepnova Cloud</3>",
     "features": {
       "fileIntegration": {
         "desc": "Głęboka integracja z systemem zarządzania plikami, generowane obrazy są automatycznie zapisywane w systemie plików, umożliwiając ich centralne zarządzanie i organizację",

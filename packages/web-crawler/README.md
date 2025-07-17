@@ -1,10 +1,10 @@
-# @lobechat/web-crawler
+# @deepnova/web-crawler
 
-LobeChat's built-in web crawling module for intelligent extraction of web content and conversion to Markdown format.
+deepnova's built-in web crawling module for intelligent extraction of web content and conversion to Markdown format.
 
 ## 📝 Introduction
 
-`@lobechat/web-crawler` is a core component of LobeChat responsible for intelligent web content crawling and processing. It extracts valuable content from various webpages, filters out distracting elements, and generates structured Markdown text.
+`@deepnova/web-crawler` is a core component of deepnova responsible for intelligent web content crawling and processing. It extracts valuable content from various webpages, filters out distracting elements, and generates structured Markdown text.
 
 ## 🛠️ Core Features
 
@@ -48,7 +48,7 @@ const url = [
 
 ### Rule Submission Process
 
-1. Fork the [LobeChat repository](https://github.com/lobehub/lobe-chat)
+1. Fork the [deepnova repository](https://github.com/lobehub/lobe-chat)
 2. Add or modify URL rules
 3. Submit a Pull Request describing:
 
@@ -58,4 +58,4 @@ const url = [
 
 ## 📌 Note
 
-This is an internal module of LobeHub (`"private": true`), designed specifically for LobeChat and not published as a standalone package.
+This is an internal module of LobeHub (`"private": true`), designed specifically for deepnova and not published as a standalone package.

@@ -40,7 +40,7 @@
   },
   "networkError": "Fehler beim Abrufen der Wissensdatenbank. Bitte überprüfen Sie Ihre Netzwerkverbindung und versuchen Sie es erneut.",
   "notSupportGuide": {
-    "desc": "Die aktuelle Bereitstellung ist im Client-Datenbankmodus und unterstützt keine Dateiverwaltungsfunktionen. Bitte wechseln Sie zu <1>Server-Datenbank-Bereitstellungsmodus</1> oder verwenden Sie direkt <3>LobeChat Cloud</3>",
+    "desc": "Die aktuelle Bereitstellung ist im Client-Datenbankmodus und unterstützt keine Dateiverwaltungsfunktionen. Bitte wechseln Sie zu <1>Server-Datenbank-Bereitstellungsmodus</1> oder verwenden Sie direkt <3>deepnova Cloud</3>",
     "features": {
       "allKind": {
         "desc": "Unterstützt gängige Dateitypen, einschließlich Word, PPT, Excel, PDF, TXT und andere gängige Dokumentformate sowie JS, Python und andere gängige Code-Dateien",

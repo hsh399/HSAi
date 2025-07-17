@@ -1,4 +1,4 @@
-import { RunCommandParams } from '@lobechat/electron-client-ipc';
+import { RunCommandParams } from '@deepnova/electron-client-ipc';
 import { Terminal } from '@xterm/xterm';
 import '@xterm/xterm/css/xterm.css';
 import { memo, useEffect, useRef } from 'react';

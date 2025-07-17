@@ -101,7 +101,7 @@
       "desc1": "Sohbet penceresinde sağ üst köşedeki ayarlar üzerinden eklemek istediğin asistanın ayar sayfasına git;",
       "desc2": "Sağ üst köşedeki asistan pazarına gönder butonuna tıkla.",
       "tag": "Yöntem 1",
-      "title": "LobeChat ile Gönder"
+      "title": "deepnova ile Gönder"
     },
     "func2": {
       "button": "Github Asistan Deposu'na Git",
@@ -254,7 +254,7 @@
             "claude": "- **Claude Desktop** uygulamasını açın\n- **Ayarlar** bölümüne gidin ve **Geliştirici** seçeneğini seçin\n- **Yapılandırmayı Düzenle**ye tıklayın\n- **claude_desktop_config.json** dosyasını açın\n- Sunucu yapılandırmasını mevcut dosyaya kopyalayıp yapıştırın ve kaydedin",
             "cline": "- Cline eklentisi yüklü VS Code'u açın\n- Yan menüdeki Cline simgesine tıklayın\n- Açılır menüden **MCP Sunucuları**nı seçin\n- **Uzak Sunucular** sekmesinde sunucu adınızı ve MCP sunucu URL'nizi girin\n- Bağlanmak için **Sunucu Ekle**ye tıklayın",
             "cursor": "- **Ayarlar** menüsüne gidin ve Cursor ayarlarını seçin\n- Sol taraftan **MCP**yi seçin\n- Sağ üst köşeden **Yeni global MCP sunucusu ekle**ye tıklayın\n- Sunucu yapılandırmasını mevcut dosyaya kopyalayıp yapıştırın ve kaydedin",
-            "lobeChat": "- **LobeChat masaüstü** uygulamasını açın\n- **Ayarlar** - **Varsayılan Asistan** bölümüne gidin\n- Ardından **Eklenti Ayarları** - **Özel Eklentiler**i seçin\n- **JSON Yapılandırmasını Hızlı İçe Aktar**a tıklayın\n- Sunucu yapılandırmasını metin kutusuna yapıştırın ve yükleyin",
+            "deepnova": "- **deepnova masaüstü** uygulamasını açın\n- **Ayarlar** - **Varsayılan Asistan** bölümüne gidin\n- Ardından **Eklenti Ayarları** - **Özel Eklentiler**i seçin\n- **JSON Yapılandırmasını Hızlı İçe Aktar**a tıklayın\n- Sunucu yapılandırmasını metin kutusuna yapıştırın ve yükleyin",
             "openai": "- **OpenAI uygulamanızı** veya geliştirme ortamınızı açın\n- **Responses API** içinde MCP araçlarını yapılandırın\n- API isteğindeki **tools** dizisine MCP bloğu ekleyin\n- **server_url** değerini MCP sunucu uç noktanız olarak ayarlayın\n- Kimlik doğrulama için gerekli başlıkları (API anahtarı, token vb.) ekleyin\n- Açık araçları sınırlamak için `allowed_tools` parametresini kullanın\n- Araç yürütme onayını kontrol etmek için `require_approval` ayarını yapın",
             "vscode": "- VS Code'u açın\n- Komut paletini açın (`Ctrl+Shift+P` / `Cmd+Shift+P`)\n- **MCP: Sunucu Ekle** yazın ve seçin\n- Çalışma alanı veya kullanıcı ayarlarına eklemeyi seçin\n- Sunucu yapılandırmasını yapıştırın"
           },
@@ -545,7 +545,7 @@
       "type": "Tür"
     },
     "providerInfo": {
-      "apiTooltip": "LobeChat, bu sağlayıcı için özel API anahtarları kullanmayı destekler.",
+      "apiTooltip": "deepnova, bu sağlayıcı için özel API anahtarları kullanmayı destekler.",
       "input": "Girdi Fiyatı",
       "inputTooltip": "Her milyon Token için maliyet",
       "latency": "Gecikme",

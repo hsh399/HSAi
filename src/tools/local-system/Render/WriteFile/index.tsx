@@ -1,4 +1,4 @@
-import { WriteLocalFileParams } from '@lobechat/electron-client-ipc';
+import { WriteLocalFileParams } from '@deepnova/electron-client-ipc';
 import { Icon } from '@lobehub/ui';
 import { Skeleton } from 'antd';
 import { ChevronRight } from 'lucide-react';

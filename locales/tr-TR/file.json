@@ -40,7 +40,7 @@
   },
   "networkError": "Bilgi bankası alınamadı, lütfen ağ bağlantınızı kontrol edip tekrar deneyin",
   "notSupportGuide": {
-    "desc": "Mevcut dağıtım örneği istemci veritabanı modunda, dosya yönetim işlevini kullanamazsınız. Lütfen <1>sunucu veritabanı dağıtım moduna</1> geçin veya doğrudan <3>LobeChat Cloud</3> kullanın.",
+    "desc": "Mevcut dağıtım örneği istemci veritabanı modunda, dosya yönetim işlevini kullanamazsınız. Lütfen <1>sunucu veritabanı dağıtım moduna</1> geçin veya doğrudan <3>deepnova Cloud</3> kullanın.",
     "features": {
       "allKind": {
         "desc": "Word, PPT, Excel, PDF, TXT gibi yaygın belge formatları ve JS, Python gibi popüler kod dosyalarını destekler.",

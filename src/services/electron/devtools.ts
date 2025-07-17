@@ -1,4 +1,4 @@
-import { dispatch } from '@lobechat/electron-client-ipc';
+import { dispatch } from '@deepnova/electron-client-ipc';
 
 class DevtoolsService {
   async openDevtools(): Promise<void> {

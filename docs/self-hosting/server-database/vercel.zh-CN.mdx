@@ -1,6 +1,6 @@
 ---
-title: 在 Vercel 上部署 LobeChat 的服务端数据库版本
-description: 本文详细介绍如何在 Vercel 中部署服务端数据库版 LobeChat，包括数据库配置、身份验证服务配置和 S3 存储服务的设置步骤。
+title: 在 Vercel 上部署 deepnova 的服务端数据库版本
+description: 本文详细介绍如何在 Vercel 中部署服务端数据库版 deepnova，包括数据库配置、身份验证服务配置和 S3 存储服务的设置步骤。
 tags:
   - 服务端数据库
   - Postgres
@@ -14,7 +14,7 @@ tags:
 
 # 在 Vercel 上部署服务端数据库版
 
-本文将详细介绍如何在 Vercel 中部署服务端数据库版 LobeChat，包括： 1）数据库配置；2）身份验证服务配置；3） S3 存储服务的设置步骤。
+本文将详细介绍如何在 Vercel 中部署服务端数据库版 deepnova，包括： 1）数据库配置；2）身份验证服务配置；3） S3 存储服务的设置步骤。
 
 <Callout type={'warning'}>
   进行后续操作前，请务必确认以下事项：
@@ -98,7 +98,7 @@ tags:
 
   ### 添加 `APP_URL` 环境变量
 
-  该部分最后需要添加 `APP_URL` 环境变量，用于指定 LobeChat 应用的 URL 地址。
+  该部分最后需要添加 `APP_URL` 环境变量，用于指定 deepnova 应用的 URL 地址。
 </Steps>
 
 ## 二、 配置身份验证服务
@@ -197,18 +197,18 @@ tags:
 
   ```shell
   # 存储桶的名称
-  S3_BUCKET=lobechat
+  S3_BUCKET=deepnova
   # 存储桶的请求端点(注意此处链接的路径带存储桶名称，必须删除该路径，或使用申请 S3 API token 页面所提供的链接)
   S3_ENDPOINT=https://0b33a03b5c993fd2f453379dc36558e5.r2.cloudflarestorage.com
   # 存储桶对外的访问域名
-  S3_PUBLIC_DOMAIN=https://s3-for-lobechat.your-domain.com
+  S3_PUBLIC_DOMAIN=https://s3-for-deepnova.your-domain.com
   ```
 
   <Callout type={'warning'}>`S3_ENDPOINT`必须删除其路径，否则会无法访问所上传文件</Callout>
 
   ### 获取 S3 密钥环境变量
 
-  你需要获取 S3 的访问密钥，以便 LobeChat 的服务端有权限访问 S3 存储服务。在 R2 中，你可以在账户详情中配置访问密钥：
+  你需要获取 S3 的访问密钥，以便 deepnova 的服务端有权限访问 S3 存储服务。在 R2 中，你可以在账户详情中配置访问密钥：
 
   <Image alt={'查看存储桶的访问秘钥'} src={'https://github.com/lobehub/lobe-chat/assets/28616219/be0c95c0-6693-44ee-a490-7e8dfaa8b34d'} />
 
@@ -243,7 +243,7 @@ tags:
   S3_SECRET_ACCESS_KEY=55af75d8eb6b99f189f6a35f855336ea62cd9c4751a5cf4337c53c1d3f497ac2
 
   # 存储桶的名称
-  S3_BUCKET=lobechat
+  S3_BUCKET=deepnova
   # 存储桶的请求端点
   S3_ENDPOINT=https://0b33a03b5c993fd2f453379dc36558e5.r2.cloudflarestorage.com
   # 存储桶对外的访问域名
@@ -286,7 +286,7 @@ tags:
 
 ## 四、部署并验证
 
-通过上述步骤之后，我们应该就完成了服务端数据库的配置。接下来我们可以将 LobeChat 部署到 Vercel 上，然后访问你的 Vercel 链接，验证服务端数据库是否正常工作。
+通过上述步骤之后，我们应该就完成了服务端数据库的配置。接下来我们可以将 deepnova 部署到 Vercel 上，然后访问你的 Vercel 链接，验证服务端数据库是否正常工作。
 
 <Steps>
   ### 重新部署最新的 commit
@@ -331,11 +331,11 @@ S3_ACCESS_KEY_ID=9998d6757e276cf9f1edbd325b7083a6
 S3_SECRET_ACCESS_KEY=55af75d8eb6b99f189f6a35f855336ea62cd9c4751a5cf4337c53c1d3f497ac2
 
 # 存储桶的名称
-S3_BUCKET=lobechat
+S3_BUCKET=deepnova
 # 存储桶的请求端点
 S3_ENDPOINT=https://0b33a03b5c993fd2f453379dc36558e5.r2.cloudflarestorage.com
 # 存储桶对外的访问域名
-S3_PUBLIC_DOMAIN=https://s3-for-lobechat.your-domain.com
+S3_PUBLIC_DOMAIN=https://s3-for-deepnova.your-domain.com
 # 桶的区域，如 us-west-1，一般来说不需要添加，但某些服务商则需要配置
 # S3_REGION=us-west-1
 ```

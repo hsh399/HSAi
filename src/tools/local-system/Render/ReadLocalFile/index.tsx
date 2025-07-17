@@ -1,4 +1,4 @@
-import { LocalReadFileParams } from '@lobechat/electron-client-ipc';
+import { LocalReadFileParams } from '@deepnova/electron-client-ipc';
 import { memo } from 'react';
 
 import { useChatStore } from '@/store/chat';

@@ -1,25 +1,25 @@
 ---
-title: LobeChat WebRTC Sync - Real-Time Data Sharing
+title: deepnova WebRTC Sync - Real-Time Data Sharing
 description: >-
-  Explore LobeChat's WebRTC sync for real-time data sharing and privacy without servers.
+  Explore deepnova's WebRTC sync for real-time data sharing and privacy without servers.
 
 tags:
   - WebRTC
-  - LobeChat
+  - deepnova
   - Data Synchronization
   - Real-Time Communication
   - Peer-to-Peer
 ---
 
-# LobeChat WebRTC Sync
+# deepnova WebRTC Sync
 
 ## Introduction to WebRTC
 
-WebRTC (Web Real-Time Communication) is a technology that enables peer-to-peer communication between browsers. In LobeChat, we experimentally implemented real-time data synchronization between devices based on WebRTC and YJS, without relying on traditional server databases. This solution offers high privacy, zero conflicts, and provides a real-time session synchronization experience.
+WebRTC (Web Real-Time Communication) is a technology that enables peer-to-peer communication between browsers. In deepnova, we experimentally implemented real-time data synchronization between devices based on WebRTC and YJS, without relying on traditional server databases. This solution offers high privacy, zero conflicts, and provides a real-time session synchronization experience.
 
 ## Configuring WebRTC for Synchronization
 
-To use the WebRTC synchronization feature in LobeChat, you need to complete the following steps:
+To use the WebRTC synchronization feature in deepnova, you need to complete the following steps:
 
 <Steps>
   ### Deploy Signaling Server
@@ -34,15 +34,15 @@ To use the WebRTC synchronization feature in LobeChat, you need to complete the 
 
   ### Enable WebRTC Sync in the Deployment Instance
 
-  The WebRTC sync feature in LobeChat is hidden by default and needs to be enabled by adding the environment variable `FEATURE_FLAGS=+webrtc_sync`.
+  The WebRTC sync feature in deepnova is hidden by default and needs to be enabled by adding the environment variable `FEATURE_FLAGS=+webrtc_sync`.
 
-  ### Configure WebRTC Sync Settings in LobeChat
+  ### Configure WebRTC Sync Settings in deepnova
 
-  1. Open LobeChat settings -> Data Sync
+  1. Open deepnova settings -> Data Sync
   2. Enter the signaling server address in the WebRTC sync section;
   3. Set the sync channel name and password
 
-  <Image alt={'LobeChat Data Sync Settings Page'} height={356} inStep src={'https://github.com/lobehub/lobe-chat/assets/28616219/bf86bf1e-87fb-4015-8587-15ff28bb9c24'} />
+  <Image alt={'deepnova Data Sync Settings Page'} height={356} inStep src={'https://github.com/lobehub/lobe-chat/assets/28616219/bf86bf1e-87fb-4015-8587-15ff28bb9c24'} />
 
   ### Repeat the Above Configuration on Devices that Need to Sync
 

@@ -1,4 +1,4 @@
-import { LobeChatPluginApi, LobeChatPluginManifest, PluginSchema } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginApi, deepnovaPluginManifest, PluginSchema } from '@lobehub/chat-plugin-sdk';
 import { DeploymentOption } from '@lobehub/market-sdk';
 import { McpError } from '@modelcontextprotocol/sdk/types.js';
 import { TRPCError } from '@trpc/server';
@@ -35,7 +35,7 @@ class MCPService {
   // --- MCP Interaction ---
 
   // listTools now accepts MCPClientParams
-  async listTools(params: MCPClientParams): Promise<LobeChatPluginApi[]> {
+  async listTools(params: MCPClientParams): Promise<deepnovaPluginApi[]> {
     const client = await this.getClient(params); // Get client using params
     const loggableParams = this.sanitizeForLogging(params);
     log(`Listing tools using client for params: %O`, loggableParams);
@@ -47,7 +47,7 @@ class MCPService {
         loggableParams,
         result.length,
       );
-      return result.map<LobeChatPluginApi>((item) => ({
+      return result.map<deepnovaPluginApi>((item) => ({
         // Assuming identifier is the unique name/id
         description: item.description,
         name: item.name,
@@ -272,7 +272,7 @@ class MCPService {
       type: 'none' | 'bearer' | 'oauth2';
     },
     headers?: Record<string, string>,
-  ): Promise<LobeChatPluginManifest> {
+  ): Promise<deepnovaPluginManifest> {
     const mcpParams = { name: identifier, type: 'http' as const, url };
 
     // 如果有认证信息，添加到参数中
@@ -305,7 +305,7 @@ class MCPService {
   async getStdioMcpServerManifest(
     params: Omit<StdioMCPParams, 'type'>,
     metadata?: CustomPluginMetadata,
-  ): Promise<LobeChatPluginManifest> {
+  ): Promise<deepnovaPluginManifest> {
     const client = await this.getClient({
       args: params.args,
       command: params.command,
@@ -335,7 +335,7 @@ class MCPService {
       ...manifest,
       // TODO: temporary
       type: 'mcp' as any,
-    } as LobeChatPluginManifest;
+    } as deepnovaPluginManifest;
   }
 
   /**
@@ -397,7 +397,7 @@ class MCPService {
   }
 
   private transformMCPToolToLobeAPI = (data: McpTool[]) => {
-    return data.map<LobeChatPluginApi>((item) => ({
+    return data.map<deepnovaPluginApi>((item) => ({
       // Assuming identifier is the unique name/id
       description: item.description,
       name: item.name,

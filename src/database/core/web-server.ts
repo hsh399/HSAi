@@ -8,9 +8,9 @@ import { serverDBEnv } from '@/config/db';
 import { isServerMode } from '@/const/version';
 import * as schema from '@/database/schemas';
 
-import { LobeChatDatabase } from '../type';
+import { deepnovaDatabase } from '../type';
 
-export const getDBInstance = (): LobeChatDatabase => {
+export const getDBInstance = (): deepnovaDatabase => {
   if (!isServerMode) return {} as any;
 
   if (!serverDBEnv.KEY_VAULTS_SECRET) {

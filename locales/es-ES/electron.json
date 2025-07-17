@@ -41,7 +41,7 @@
   "remoteServer": {
     "authError": "Error de autorización: {{error}}",
     "authPending": "Complete la autorización en el navegador",
-    "configDesc": "Conéctese al servidor LobeChat remoto para habilitar la sincronización de datos",
+    "configDesc": "Conéctese al servidor deepnova remoto para habilitar la sincronización de datos",
     "configError": "Error de configuración",
     "configTitle": "Configurar sincronización en la nube",
     "connect": "Conectar y autorizar",

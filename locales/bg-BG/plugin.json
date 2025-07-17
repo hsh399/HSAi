@@ -218,7 +218,7 @@
       "edit": "Редактирай персонализиран плъгин"
     },
     "type": {
-      "lobe": "Плъгин на LobeChat",
+      "lobe": "Плъгин на deepnova",
       "openai": "Плъгин на OpenAI"
     },
     "update": "Актуализирай",
@@ -401,7 +401,7 @@
     "tabs": {
       "installed": "Инсталирани",
       "mcp": "MCP добавки",
-      "old": "LobeChat плъгини"
+      "old": "deepnova плъгини"
     },
     "title": "Магазин за плъгини"
   },

@@ -1,4 +1,4 @@
-import { DataSyncConfig, ElectronAppState, NetworkProxySettings } from '@lobechat/electron-client-ipc';
+import { DataSyncConfig, ElectronAppState, NetworkProxySettings } from '@deepnova/electron-client-ipc';
 
 export type RemoteServerError = 'CONFIG_ERROR' | 'AUTH_ERROR' | 'DISCONNECT_ERROR';
 

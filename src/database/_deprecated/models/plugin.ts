@@ -1,4 +1,4 @@
-import { LobeChatPluginManifest } from '@lobehub/chat-plugin-sdk';
+import { deepnovaPluginManifest } from '@lobehub/chat-plugin-sdk';
 
 import { BaseModel } from '@/database/_deprecated/core';
 import { LobeTool } from '@/types/tool';
@@ -8,7 +8,7 @@ import { DB_Plugin, DB_PluginSchema } from '../schemas/plugin';
 
 export interface InstallPluginParams {
   identifier: string;
-  manifest?: LobeChatPluginManifest;
+  manifest?: deepnovaPluginManifest;
   type: 'plugin' | 'customPlugin';
 }
 

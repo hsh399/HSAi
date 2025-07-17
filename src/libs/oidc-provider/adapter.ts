@@ -12,16 +12,16 @@ import {
   oidcRefreshTokens,
   oidcSessions,
 } from '@/database/schemas/oidc';
-import { LobeChatDatabase } from '@/database/type';
+import { deepnovaDatabase } from '@/database/type';
 
 // 创建 adapter 日志命名空间
 const log = debug('lobe-oidc:adapter');
 
 class OIDCAdapter {
-  private db: LobeChatDatabase;
+  private db: deepnovaDatabase;
   private name: string;
 
-  constructor(name: string, db: LobeChatDatabase) {
+  constructor(name: string, db: deepnovaDatabase) {
     log('[%s] Constructor called with name: %s', name, name);
 
     this.name = name;
@@ -531,7 +531,7 @@ class OIDCAdapter {
   /**
    * 创建适配器工厂
    */
-  static createAdapterFactory = (db: LobeChatDatabase) => {
+  static createAdapterFactory = (db: deepnovaDatabase) => {
     log('Creating adapter factory with database instance');
     return (name: string) => new OIDCAdapter(name, db);
   };

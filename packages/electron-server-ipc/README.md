@@ -1,10 +1,10 @@
-# @lobechat/electron-server-ipc
+# @deepnova/electron-server-ipc
 
 LobeHub 的 Electron 应用与服务端之间的 IPC（进程间通信）模块，提供可靠的跨进程通信能力。
 
 ## 📝 简介
 
-`@lobechat/electron-server-ipc` 是 LobeHub 桌面应用的核心组件，负责处理 Electron 主进程与 nextjs 服务端之间的通信。它提供了一套简单而健壮的 API，用于在不同进程间传递数据和执行远程方法调用。
+`@deepnova/electron-server-ipc` 是 LobeHub 桌面应用的核心组件，负责处理 Electron 主进程与 nextjs 服务端之间的通信。它提供了一套简单而健壮的 API，用于在不同进程间传递数据和执行远程方法调用。
 
 ## 🛠️ 核心功能
 
@@ -20,7 +20,7 @@ LobeHub 的 Electron 应用与服务端之间的 IPC（进程间通信）模块�
 负责监听客户端请求并响应，通常运行在 Electron 的主进程中：
 
 ```typescript
-import { ElectronIPCEventHandler, ElectronIPCServer } from '@lobechat/electron-server-ipc';
+import { ElectronIPCEventHandler, ElectronIPCServer } from '@deepnova/electron-server-ipc';
 
 // 定义处理函数
 const eventHandler: ElectronIPCEventHandler = {
@@ -40,7 +40,7 @@ server.start();
 负责连接到服务端并发送请求，通常在服务端（如 Next.js 服务）中使用：
 
 ```typescript
-import { ElectronIPCMethods, ElectronIpcClient } from '@lobechat/electron-server-ipc';
+import { ElectronIPCMethods, ElectronIpcClient } from '@deepnova/electron-server-ipc';
 
 // 创建客户端
 const client = new ElectronIpcClient();
